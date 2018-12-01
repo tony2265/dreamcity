@@ -2809,47 +2809,41 @@ input, select, textarea {
 				width: 60%;
 			}
 /*
-6fc3df
-8d82c4
-ec8d81
-e7b788
 8ea9e8
+e7b788
+ec8d81
+8d82c4
+6fc3df
 87c5a4
 */
             /*lightblue*/
 			.tiles article:nth-child(6n - 5):before {
-                background-color: #8ea9e8;
+                background-color: rgba(142,169,232,0.7);
 			}
             /*purple*/
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #e7b788;
+                background-color: rgba(231,183,136,0.7);
+
 			}
             /*red*/
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+                background-color: rgba(236,141,129,0.7);
+
 			}
             /*orange*/
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #8d82c4;
+                background-color: rgba(141,130,196,0.7);
 			}
 
             /*blue*/
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #6fc3df;
+                background-color: rgba(111,195,223,0.7);
 			}
             /*green*/
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+                background-color: rgba(135,197,164,0.7);
 			}
 
-/*
-6fc3df
-8d82c4
-ec8d81
-e7b788
-8ea9e8
-87c5a4
-*/
 
 /*
 			.tiles article:nth-child(12n - 5):before {
