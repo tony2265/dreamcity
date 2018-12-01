@@ -2818,7 +2818,7 @@ e7b788
 */
             /*lightblue*/
 			.tiles article:nth-child(6n - 5):before {
-                background-color: rgba(22, 105, 110, 0.5)
+                background-color: #8ea9e8;
 			}
             /*purple*/
 			.tiles article:nth-child(6n - 4):before {
