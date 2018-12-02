@@ -2816,36 +2816,33 @@ ec8d81
 6fc3df
 87c5a4
 */
-            /*lightblue*/
+
+
 			.tiles article:nth-child(6n - 5):before {
                 background-color: rgba(142,169,232,0.8);
 			}
-            /*purple*/
 			.tiles article:nth-child(6n - 4):before {
                 background-color: rgba(231,183,136,0.8);
 
 			}
-            /*red*/
 			.tiles article:nth-child(6n - 3):before {
                 background-color: rgba(236,141,129,0.8);
 
 			}
-            /*orange*/
 			.tiles article:nth-child(6n - 2):before {
                 background-color: rgba(141,130,196,0.8);
 			}
 
-            /*blue*/
 			.tiles article:nth-child(6n - 1):before {
                 background-color: rgba(111,195,223,0.8);
 			}
-            /*green*/
 			.tiles article:nth-child(6n):before {
                 background-color: rgba(135,197,164,0.8);
 			}
 
 
 /*
+
 			.tiles article:nth-child(12n - 5):before {
 				background-color: #ec8d81;
 			}
@@ -3636,6 +3633,7 @@ ec8d81
 	#contact {
 		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		overflow-x: hidden;
+        overflow: hidden;
 	}
 
 		#contact > .inner {
