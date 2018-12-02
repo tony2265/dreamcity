@@ -3633,7 +3633,7 @@ ec8d81
 	#contact {
 		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		overflow-x: hidden;
-        overflow: hidden;
+        overflow-y:hidden;
 	}
 
 		#contact > .inner {
