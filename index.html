@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body class="is-preload">
+<body onload="randombg()" class="is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -420,7 +420,13 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script>
+    function randombg(){
+        var random= Math.floor(Math.random() * 5) + 0;
+        var bigSize = ["url('images/bg0.png')","url('images/bg1.png')", "url('images/bg2.png')","url('images/bg3.png')","url('images/bg4.png')"];
+        document.getElementById("bg").style.backgroundImage=bigSize[random];
+        }
+    </script>
 </body>
 
 </html>
