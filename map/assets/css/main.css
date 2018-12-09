@@ -3820,14 +3820,6 @@ ec8d81
 		visibility: hidden;
 		width: 100%;
 		z-index: 10002;
-        FILTER: Chroma(Color=#FFFFFF);
-        scrollbar-face-color:#FFFFFF;/*最大區域顏色*/
-        scrollbar-highlight-color:#FFFFFF;/*左上陰影*/
-        scrollbar-3dlight-color:#585858;/*左上線條*/
-        scrollbar-darkshadow-color:#585858;/*右下線條*/
-        scrollbar-shadow-color:#FFFFFF;/*右下陰影*/
-        scrollbar-arrow-color:#585858;/*箭頭顏色*/
-        scrollbar-track-color:#FFFFFF;/*底色*/
 
 	}
 
