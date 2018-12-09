@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+    
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3818,6 +3820,15 @@ ec8d81
 		visibility: hidden;
 		width: 100%;
 		z-index: 10002;
+        FILTER: Chroma(Color=#FFFFFF);
+        scrollbar-face-color:#FFFFFF;/*最大區域顏色*/
+        scrollbar-highlight-color:#FFFFFF;/*左上陰影*/
+        scrollbar-3dlight-color:#585858;/*左上線條*/
+        scrollbar-darkshadow-color:#585858;/*右下線條*/
+        scrollbar-shadow-color:#FFFFFF;/*右下陰影*/
+        scrollbar-arrow-color:#585858;/*箭頭顏色*/
+        scrollbar-track-color:#FFFFFF;/*底色*/
+
 	}
 
 		#menu .inner {
@@ -3833,7 +3844,11 @@ ec8d81
 			max-width: 100%;
 			max-height: 100vh;
 			opacity: 0;
-			overflow: auto;
+			overflow-x:hidden;
+            overflow-y:auto;
+            float: right;
+
+
 			text-align: center;
 			visibility: hidden;
 			width: 18em;
