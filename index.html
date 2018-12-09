@@ -15,7 +15,6 @@
 </head>
 
 <body onload="randombg()" class="is-preload">
-
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Header -->
@@ -40,7 +39,7 @@
                     <li><a href="#work">遊戲實況</a></li>
                     <li><a href="#join">加入我們</a></li>
                     <li><a href="#work">教學資源</a></li>
-                    <li><a href="#elements">相關連結</a></li>
+                    <li><a href="#Page1">相關連結</a></li>
                 </ul>
             </nav>
         </header>
@@ -62,6 +61,31 @@
                 <span class="image main"><img src="images/work.png" alt="" /></span>
                 <p>親愛的瀏覽者你好！<br>此頁面尚在施工中，造成您的不便請見諒。</p>
             </article>
+
+            <!-- Page1 -->
+            <article id="Page1">
+                <ul class="actions">
+                    <li><a href="#Page1" class="button primary">頁面１</a></li>
+                    <li><a href="#Page2" class="button">頁面２</a></li>
+                </ul>
+                <h2 class="major">標題1...</h2>
+                <span class="image main"><img src="images/work.png" alt="" /></span>
+                <p>內容1！<br>內容1，內容1。</p>
+            </article>
+
+            <!-- Page2 -->
+            <article id="Page2">
+                <ul class="actions">
+                    <li><a href="#Page1" class="button">頁面１</a></li>
+                    <li><a href="#Page2" class="button primary">頁面２</a></li>
+                </ul>
+
+                <h2 class="major">標題2...</h2>
+                <span class="image main"><img src="images/work.png" alt="" /></span>
+                <p>內容2！<br>內容2，內容2。</p>
+            </article>
+
+
             <!-- Contact -->
             <article id="contact">
                 <h2 class="major">Contact</h2>
@@ -421,11 +445,12 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-    function randombg(){
-        var random= Math.floor(Math.random() * 5) + 0;
-        var bigSize = ["url('images/bg0.png')","url('images/bg1.png')", "url('images/bg2.png')","url('images/bg3.png')","url('images/bg4.png')"];
-        document.getElementById("bg").style.backgroundImage=bigSize[random];
+        function randombg() {
+            var random = Math.floor(Math.random() * 5) + 0;
+            var bigSize = ["url('images/bg0.png')", "url('images/bg1.png')", "url('images/bg2.png')", "url('images/bg3.png')", "url('images/bg4.png')"];
+            document.getElementById("bg").style.backgroundImage = bigSize[random];
         }
+
     </script>
 </body>
 
