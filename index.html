@@ -204,6 +204,8 @@
                 <h2 class="major">頁面施工中...</h2>
                 <span class="image main"><img src="images/work.jpg" alt="" /></span>
                 <p>親愛的瀏覽者你好！<br>此頁面尚在施工中，造成您的不便請見諒。</p>
+                <input type="text" id="clock" size="35" />
+
             </article>
 
             <!-- 遊戲實況 -->
@@ -724,15 +726,42 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://apis.google.com/js/platform.js"></script>
-    <script>
-        var random = Math.floor(Math.random() * 14) + 0;
+    <script language=javascript>
+        var $bg = $("#bg");
         var bigSize = ["url('images/bg/1.jpg')", "url('images/bg/14.jpg')", "url('images/bg/15.jpg')", "url('images/bg/2.jpg')", "url('images/bg/3.jpg')", "url('images/bg/4.jpg')", "url('images/bg/5.jpg')", "url('images/bg/6.jpg')", "url('images/bg/8.jpg')", "url('images/bg/9.jpg')", "url('images/bg/10.jpg')", "url('images/bg/11.jpg')", "url('images/bg/12.jpg')", "url('images/bg/13.jpg')", ];
-        setInterval(randombg,2000);
+        
+        var random = Math.floor(Math.random() * 14) + 0;
+        setInterval("randombg()", 15000);
+
         function randombg() {
-            document.getElementById("bg").style.backgroundImage = bigSize[random];
+            if(random == 14) random=0;
+            else random++;
+            $bg.animate({
+                    opacity: 0.1
+                },
+                700,
+                function() {
+                    $bg.css({
+                        "background-image": bigSize[random],
+                        opacity: 1
+                    });
+                }
+            );
+            //$bg.css("background-image", bigSize[random]);
+
         }
 
     </script>
+    <script language=javascript>
+        var int = self.setInterval("clock()", 1000)
+
+        function clock() {
+            var t = new Date()
+            document.getElementById("clock").value = t
+        }
+
+    </script>
+
 </body>
 
 </html>
