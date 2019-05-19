@@ -159,6 +159,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+            
 		}
 
 	strong, b {
@@ -1341,12 +1342,15 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 0.96rem;
 					border-bottom: 0;
+                    font-weight:bold;
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(255, 255, 255, 0.8);
+                        color: black;
+                        /*background-color: rgba(255, 255, 255, 0.075);*/
 					}
 
 					#header nav ul li a:active {
