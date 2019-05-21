@@ -2877,7 +2877,7 @@ ec8d81
 		@media screen and (max-width: 980px) {
 
 			.tiles article {
-				width: 50% !important;
+				width: 100% !important;
 			}
 
 		}
