@@ -1100,6 +1100,7 @@ input, select, textarea {
 		height: 100vh;
 		z-index: 1;
         background-size: cover;
+        background-position: center;
 	}
 
 		#bg:before, #bg:after {
