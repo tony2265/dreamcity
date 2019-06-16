@@ -1668,9 +1668,10 @@ input, select, textarea {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.1s ease;
-  border-radius: 0 3px 3px 0;
+  transition: 0.5s ease;
+  border-radius: 0px 3px 3px 0px;
   user-select: none;
+  border-bottom-color: rgba(0, 0, 0, 0);
 }
 
 /* Position the "next button" to the right */
@@ -1697,19 +1698,20 @@ input, select, textarea {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #000000;
+  color: #788080;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  font-weight: 400;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  margin: 0 0px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
