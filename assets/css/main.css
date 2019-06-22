@@ -1709,9 +1709,9 @@ input, select, textarea {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 0px;
+  height: 14px;
+  width: 14px;
+  margin: 0 1px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
