@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## 夢想之都工作室官方網站
 
-You can use the [editor on GitHub](https://github.com/tony2265/dreamcity/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+歡迎前往我們的 [網站](https://https://www.dreamcity.nctu.me/) 即時關注我們的創作與最新動態
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 關於我們
 
-### Markdown
+夢想之都工作室 DreamCity，成立於2015年，深耕於Minecraft地圖製作，擁有近20名團員，團員多來自臺灣、香港與澳門等地，採取審核制入團，為跨足兩岸三地的區域級地圖創作團隊。 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+夢想之都工作室不進行任何營利，致力於推廣及創作Minecraft地圖。 
 
-```markdown
-Syntax highlighted code block
+我們相信，夢想之都擁有完整的遊戲設計團隊，以及豐富的Minecraft地圖創作經驗，使得廣大玩家可以在我們的地圖中，獲得良好的遊戲體驗。
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tony2265/dreamcity/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+更多資訊歡迎至我們的 [Facebook](https://www.facebook.com/dreamcity26481414/) 查閱。
