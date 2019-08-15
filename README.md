@@ -1,6 +1,6 @@
 ## 夢想之都工作室官方網站
 
-歡迎前往我們的 [網站](https://https://www.dreamcity.nctu.me/) 即時關注我們的創作與最新動態
+歡迎前往我們的 [網站](https://www.dreamcity.nctu.me/)  關注我們的創作與最新動態
 
 ### 關於我們
 
