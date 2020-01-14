@@ -4,177 +4,183 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://www.dreamcity.nctu.me/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/about/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/map/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/story/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/art/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/buildings/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/teaching/</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/about/rules</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/about/member</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/map/ctm</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/pvp</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/puzzle</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/map/survival</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.nctu.me/map/ctm_woc</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <loc>https://www.dreamcity.nctu.me/map/puzzle</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.nctu.me/map/survival_Underworld</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/puzzle_Bullyhood</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/pvp_VampireWar</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/pvp_VampireWar2</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/ctm_DeathWalk</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/puzzle_Rooms</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/survival_Kolovia2</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/pvp_SuDefender</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/ctm_Boom_Caverns</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/survival_Kolovia</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/ctm_Silence</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/ctm_IceAge</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/pvp_Bladesman</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/survival_Dreamland</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.nctu.me/map/download</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <loc>https://www.dreamcity.nctu.me/map/pvp</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/story/plan</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/art/painter/CC</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/art/painter/MM</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/art/painter/RU</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/buildings/builder/palloide</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/buildings/builder/IlIlIlIllIlIlIlI</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.nctu.me/teaching/server</loc>
-  <lastmod>2019-07-19T08:27:21+00:00</lastmod>
-  <priority>0.52</priority>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/ctm_Boom_Caverns</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/ctm_woc</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/ctm_DeathWalk</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/ctm_IceAge</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/ctm_Silence</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/survival_Underworld</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/survival_Kolovia2</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/survival_Kolovia</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/survival_Dreamland</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/puzzle_Bullyhood</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/puzzle_Rooms</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/pvp_VampireWar2</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/pvp_VampireWar</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/pvp_SuDefender</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.nctu.me/map/pvp_Bladesman</loc>
+  <lastmod>2020-01-14T10:47:53+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
