@@ -24,6 +24,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-76542419-3');
+
     </script>
 
 
@@ -176,13 +177,26 @@
     </div>
     <div id='fb-root'></div>
     <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.11'
+            });
+        };
+
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
             js = d.createElement(s);
             js.id = id;
-            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
     </script>
     <div class='fb-customerchat' attribution="wordpress" page_id='731386903640536' theme_color='#ff5ca1' logged_in_greeting='各位好~歡迎來到夢想之都工作室' logged_out_greeting='各位好~歡迎來到夢想之都工作室~'></div>
 
@@ -205,6 +219,7 @@
         function randombg() {
             document.getElementById("bg").style.backgroundImage = bigSize[random];
         }
+
     </script>
     <script language=javascript>
         var int = self.setInterval("clock()", 1000)
@@ -213,6 +228,9 @@
             var t = new Date()
             document.getElementById("clock").value = t
         }
+
     </script>
 
-</body></html>
+</body>
+
+</html>
