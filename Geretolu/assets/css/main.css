@@ -22,6 +22,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+    font-family: Microsoft JhengHei;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -31,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+        font-family: Microsoft JhengHei;
+
 }
 
 ol, ul {
