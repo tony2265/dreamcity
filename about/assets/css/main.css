@@ -4254,6 +4254,8 @@ body.is-preload #header .image img {
 	text-align: center;
 	width: 100px;
 	height: 100px;
+    border-color: #000000;
+    border-width: 10px;
 	border-radius: 50%;
 	overflow: hidden;
 }
