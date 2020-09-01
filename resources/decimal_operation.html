@@ -83,13 +83,13 @@
                 <h4>Modifiers的格式</h4>
                 <p>Modifiers由4個必要的標籤組成：Name、Amount、Operation、UUID</p>
                 <ol>
-                    <li>Name：功用在於方便被指令指定，如：/execute if entity @s Attributes.Modifiers.[{Name:"sample"}] <br>效果為：檢測自身標籤的Attributes中的Modifiers中是否有Name:"sample"的標籤。</li>
+                    <li>Name：功用在於方便被指令指定，如：/execute if data entity @s Attributes.Modifiers.[{Name:"sample"}] <br>效果為：檢測自身標籤的Attributes中的Modifiers中是否有Name:"sample"的標籤。</li>
                     <li>Amount：作為當前修飾符的設定值，並依據Operation指定的值來套用指定的計算模式。</li>
                     <li>Operation：用來指定計算的模式，在下方有更詳細的描述。</li>
                     <li>UUID：用來指定當前修飾符的編號(UUID)，在同一個Modifiers中，具有相同UUID的修飾符僅有全部項目中最前面一項的修飾符會被套用。<br></li>
                 </ol>
-
-                <p>ex. (1.16) Modifiers:[{Name:"multiply",Amount:0.5,Operation:2,UUID:[I;0,0,0,0]},{Name:"add",Amount:2,Operation:0,UUID:[I;0,0,0,0]}]<br>
+                <pre><code>ex. (1.16) Modifiers:[{Name:"multiply",Amount:0.5,Operation:2,UUID:[I;0,0,0,0]},{Name:"add",Amount:2,Operation:0,UUID:[I;0,0,0,0]}]</code></pre>
+                <p>
                     輸出值將等同於「base值*1.5倍」的效果。
                 </p>
                 <h4>Modifiers的規則</h4>
@@ -97,21 +97,21 @@
 
                 <ul>
                     <li>〔0 | add〕 加上設定值 <br>
-                        ex. {Amount:1.35,Operation:0} = 2.5+1.35，總值=3.85
+                        <pre><code>ex. {Amount:1.35,Operation:0} = 2.5+1.35，總值=3.85 </code></pre>
                     </li>
                     <li>〔1 | multiply_base〕 將屬性值乘上(1+設定值的總和) <br>
-                        ex. [{Amount:6.5,Operation:1},{Amount:-3.5,Operation:1}] = 2.5*(1+6.5-3.5)，總值=10
+                        <pre><code>ex. [{Amount:6.5,Operation:1},{Amount:-3.5,Operation:1}] = 2.5*(1+6.5-3.5)，總值=10</code></pre>
                     </li>
                     <li>〔2 | multiply〕 將屬性值乘上(1+設定值) <br>
-                        ex. [{Amount:3,Operation:1},{Amount:2.65,Operation:1}] = 2.5*(1+3)*(1+2.65)，總值=36.5
+                        <pre><code>ex. [{Amount:3,Operation:1},{Amount:2.65,Operation:1}] = 2.5*(1+3)*(1+2.65)，總值=36.5</code></pre>
                     </li>
                 </ul>
-                <p>在Modifiers中有指定的運算順序規則，Operation:0 -> Operation:1 -> Operation:2 (先->後) <br> <br>
-                    ex. [{Amount:1.6,Operation:2},{Amount:1.1,Operation:1},{Amount:0.9,Operation:0},{Amount:1.9,Operation:1},{Amount:1.8,Operation:2}] = (2.5+0.9)*(1+1.1+1.9)*(1+1.8)*(1+1.6)，總值=99.008 <br>
-                    也可以看成：[base+(op0項的總和)]*[1+(op1項的總和)]*(1+op2)*(1+op2)*... <br> <br>
-                    ex. 一個可行的生物標籤(1.16↑)：Attributes:[{Name:"minecraft:generic.attack_damage",Base:1.8,Modifiers:[{Name:"add",Amount:0.07,Operation:0,UUID:[I;0,0,0,0]}]}] <br> <br>
-                    ex. 一個可行的生物標籤(1.15↓)：Attributes:[{Name:"minecraft:generic.attackDamage",Base:3.0,Modifiers:[{Name:"multiply",Amount:0.23,Operation:2,UUIDMost:1,UUIDLeast:1}]}]
-                </p>
+                <p>在Modifiers中有指定的運算順序規則，Operation:0 -> Operation:1 -> Operation:2 (先->後)</p>
+                <pre><code>ex. [{Amount:1.6,Operation:2},{Amount:1.1,Operation:1},{Amount:0.9,Operation:0},{Amount:1.9,Operation:1},{Amount:1.8,Operation:2}] = (2.5+0.9)*(1+1.1+1.9)*(1+1.8)*(1+1.6)，總值=99.008 </code></pre>
+                也可以看成：[base+(op0項的總和)]*[1+(op1項的總和)]*(1+op2)*(1+op2)*... <br> <br>
+                <pre><code>ex. 一個可行的生物標籤(1.16↑)：Attributes:[{Name:"minecraft:generic.attack_damage",Base:1.8,Modifiers:[{Name:"add",Amount:0.07,Operation:0,UUID:[I;0,0,0,0]}]}]</code></pre>
+                <pre><code>ex. 一個可行的生物標籤(1.15↓)：Attributes:[{Name:"minecraft:generic.attackDamage",Base:3.0,Modifiers:[{Name:"multiply",Amount:0.23,Operation:2,UUIDMost:1,UUIDLeast:1}]}]</code></pre>
+
                 <hr>
 
                 <h3>如何進行小數運算與存取結果值</h3>
@@ -136,11 +136,11 @@
                         以下皆使用1.16版本的格式作範例</i></p>
                 <p>ex. 把自己的max_health屬性值改變為：10.9*(1+5.1)=66.49。</p>
                 <ol>
-                    <li> 設定好Modifiers的路徑：/data merge entity @s {Attributes:[{Name:"minecraft:generic.max_health",Base:8.0d,Modifiers:[{Amount:0,Operation:1,UUID:[I;0,0,0,1],Name:"multiply"}]}]}
+                    <li> 設定好Modifiers的路徑：<pre><code>/data merge entity @s {Attributes:[{Name:"minecraft:generic.max_health",Base:8.0d,Modifiers:[{Amount:0,Operation:1,UUID:[I;0,0,0,1],Name:"multiply"}]}]}</code></pre>
                     </li>
-                    <li>設定被乘數(base值)：/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set value 10.9
+                    <li>設定被乘數(base值)：<pre><code>/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set value 10.9</code></pre>
                     </li>
-                    <li> 設定乘數(Amount值)：/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Modifiers[{Name:"multiply"}].Amount set value 5.1
+                    <li> 設定乘數(Amount值)：<pre><code>/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Modifiers[{Name:"multiply"}].Amount set value 5.1</code></pre>
                     </li>
                 </ol>
                 <p>※請注意，1.16對於生物的Attributes格式略有規則上的更改：<br>
@@ -173,7 +173,7 @@
                     <li>由於是改變生物Health的方式，不得儲存0.0以下的數值(這會導致生物直接死亡而無法存取數值)。</li>
                     <li>請注意資料型態的變換：Health為float、maxHealth的值為double</li>
                 </ol>
-                <p> (1.14↑取結果值的作法，目前只能想到用Health)</p>            
+                <p> (1.14↑取結果值的作法，目前只能想到用Health)</p>
                 <i>若讀者有其他想法與做法請務必向我們提出和建議owo</i>
 
             </section>
