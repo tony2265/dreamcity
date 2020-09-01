@@ -71,6 +71,7 @@
                     <li>利用attribute指令進行小數點運算(加減乘除)與注意事項</li>
                     <li>如何存取小數運算的結果值</li>
                 </ol>
+                <hr>
                 <h3>前導資訊</h3>
                 <h4>Attributes的結構</h4>
                 <p>Attributes由2個必要的標籤：Name、Amount，以及1個可選標籤：Modifiers所組成：</p>
@@ -111,6 +112,7 @@
                     ex. 一個可行的生物標籤(1.16↑)：Attributes:[{Name:"minecraft:generic.attack_damage",Base:1.8,Modifiers:[{Name:"add",Amount:0.07,Operation:0,UUID:[I;0,0,0,0]}]}] <br> <br>
                     ex. 一個可行的生物標籤(1.15↓)：Attributes:[{Name:"minecraft:generic.attackDamage",Base:3.0,Modifiers:[{Name:"multiply",Amount:0.23,Operation:2,UUIDMost:1,UUIDLeast:1}]}]
                 </p>
+                <hr>
 
                 <h3>如何進行小數運算與存取結果值</h3>
                 <p>每個屬性值會根據修飾符與基礎值(Base)進行運算而得出，進而我們可以利用修飾符與基礎值(Base)的關係來實現「小數運算」。
