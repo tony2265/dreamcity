@@ -132,7 +132,7 @@ $size-header-pad: 4em;
 
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
+		 
 		color: _palette(accent1, bg);
 		text-decoration: none;
 
