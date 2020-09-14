@@ -1,1 +1,7 @@
+# robots.txt for http://www.dreamcity.studio/
+
+User-agent: *
+Disallow: /teaching/
+Disallow: /rtx/builder/vote/
+
 Sitemap: https://www.dreamcity.studio/sitemap.xml
