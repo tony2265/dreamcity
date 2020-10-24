@@ -61,13 +61,9 @@
                 <div class="inner">
                     <h1>夢想之都工作室</h1>
                     <h3>Minecraft 地圖創作團隊</h3>
-<!--
-                    <a href="activity/" class="button primary" style="!important;">
-                        <i class="fas fa-scroll"></i>
-                        妖姬招募
-                        <i class="fas fa-scroll"></i>
+                    <a onclick="showalert()" class="button primary" style="!important;">
+                        <i class="fas fa-scroll"></i>夢都五週年團慶<i class="fas fa-scroll"></i>
                     </a>
--->
                 </div>
             </div>
             <nav>
@@ -210,6 +206,9 @@
     <script src="assets/js/main.js"></script>
     <script src="https://apis.google.com/js/platform.js"></script>
     <script>
+        function showalert(){
+            alert("夢想之都工作室：\n活動籌備中。敬請期待！");
+        }
         var random = Math.floor(Math.random() * 6) + 0;
         var bigSize = ["url('images/bg/1.jpg')", "url('images/bg/2.jpg')", "url('images/bg/3.jpg')", "url('images/bg/4.jpg')", "url('images/bg/5.jpg')", "url('images/bg/6.jpg')"];
         setInterval(randombg, 2000);
