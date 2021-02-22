@@ -27,7 +27,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="Shortcut Icon" type="image/x-icon" href="../images/logo.ico" />
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
@@ -36,6 +37,9 @@
 </head>
 
 <body class="is-preload">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0" nonce="nJ98gqPH"></script>
+
 
     <!-- Header -->
     <header id="header" style="background-color:seagreen">
@@ -136,11 +140,14 @@
                         以下皆使用1.16版本的格式作範例</i></p>
                 <p>ex. 把自己的max_health屬性值改變為：10.9*(1+5.1)=66.49。</p>
                 <ol>
-                    <li> 設定好Modifiers的路徑：<pre><code>/data merge entity @s {Attributes:[{Name:"minecraft:generic.max_health",Base:8.0d,Modifiers:[{Amount:0,Operation:1,UUID:[I;0,0,0,1],Name:"multiply"}]}]}</code></pre>
+                    <li> 設定好Modifiers的路徑：
+                        <pre><code>/data merge entity @s {Attributes:[{Name:"minecraft:generic.max_health",Base:8.0d,Modifiers:[{Amount:0,Operation:1,UUID:[I;0,0,0,1],Name:"multiply"}]}]}</code></pre>
                     </li>
-                    <li>設定被乘數(base值)：<pre><code>/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set value 10.9</code></pre>
+                    <li>設定被乘數(base值)：
+                        <pre><code>/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set value 10.9</code></pre>
                     </li>
-                    <li> 設定乘數(Amount值)：<pre><code>/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Modifiers[{Name:"multiply"}].Amount set value 5.1</code></pre>
+                    <li> 設定乘數(Amount值)：
+                        <pre><code>/data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Modifiers[{Name:"multiply"}].Amount set value 5.1</code></pre>
                     </li>
                 </ol>
                 <p>※請注意，1.16對於生物的Attributes格式略有規則上的更改：<br>
@@ -177,7 +184,10 @@
                 <i>若讀者有其他想法與做法請務必向我們提出和建議owo</i>
 
             </section>
+            <div class="fb-comments" data-href="https://www.dreamcity.studio/resources/decimal_operation" data-width="600" data-numposts="5"></div>
+
         </div>
+
 
 
     </section>
