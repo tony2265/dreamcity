@@ -165,7 +165,7 @@ input, select, textarea {
 		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: 350;
 		letter-spacing: 0.0375em;
 		line-height: 2;
 	}
@@ -3433,7 +3433,7 @@ input, select, textarea {
 			}
 
 		#wrapper > section.intro > header > * {
-			width: 20rem;
+/*			width: 20rem;*/
 		}
 
 		#wrapper > section.intro > header:before {
@@ -3501,12 +3501,12 @@ input, select, textarea {
 					left: calc(-40vw - 4rem);
 				}
 
-					#wrapper > section > .content > section > header {
-						width: 30rem;
-					}
+                #wrapper > section > .content > section > header {
+                    width: 30rem;
+                }
 
 				#wrapper > section.intro > header > * {
-					width: 21rem;
+/*					width: 21rem;*/
 				}
 
 				#wrapper > section.intro > header:before {
