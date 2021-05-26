@@ -2123,6 +2123,8 @@ input, select, textarea {
 			text-align: center;
 			width: 2em;
 		}
+/* iicon */
+
 		.iicon.alt:before {
 			background-color: #ffffff;
 			border-radius: 100%;
@@ -2133,6 +2135,22 @@ input, select, textarea {
 			text-align: center;
 			width: 2em;
 		}
+	a.iicon.alt:before {
+		-moz-transition: background-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
+	}
+
+	a.iicon.alt:hover:before {
+		background-color: #6fc3df;
+	}
+
+	a.iicon.alt:active:before {
+		background-color: #37a6cb;
+	}
+
+/* iicon */
 
 	a.icon.alt:before {
 		-moz-transition: background-color 0.2s ease-in-out;
