@@ -2123,6 +2123,16 @@ input, select, textarea {
 			text-align: center;
 			width: 2em;
 		}
+		.iicon.alt:before {
+			background-color: #ffffff;
+			border-radius: 100%;
+			color: #242943;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		}
 
 	a.icon.alt:before {
 		-moz-transition: background-color 0.2s ease-in-out;
