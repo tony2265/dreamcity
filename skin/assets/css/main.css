@@ -3234,14 +3234,14 @@ input, select, textarea {
 			left: 0;
 			position: absolute;
 			top: 0;
-			width: 50vw;
+			width: 40vw;
 			z-index: -1;
 		}
 
 		#wrapper section {
 			display: grid;
 			grid-template-areas: "header content" "footer content";
-			grid-template-columns: 50vw 50vw;
+			grid-template-columns: 40vw 60vw;
 			grid-template-rows: 1fr;
 		}
 
@@ -3382,9 +3382,9 @@ input, select, textarea {
 			}
 
 		#wrapper .copyright {
-			color: rgba(0, 0, 0, 0.25);
+			color: rgba(0, 0, 0, 0.7);
 			font-size: 1rem;
-			left: 50vw;
+			left: 40vw;
 			position: relative;
 			width: 50vw;
 		}
@@ -3412,7 +3412,7 @@ input, select, textarea {
 
 		#wrapper > section > header:before {
 			height: calc(100% + 10rem);
-			left: calc(50vw - 5rem);
+			left: calc(40vw - 5rem);
 		}
 
 		#wrapper > section > header h1:before, #wrapper > section > header h2:before {
@@ -3425,7 +3425,7 @@ input, select, textarea {
 		}
 
 		#wrapper > section > .content > section {
-			left: calc(-50vw - 5rem);
+			left: calc(-40vw - 5rem);
 		}
 
 			#wrapper > section > .content > section > header {
@@ -3433,11 +3433,11 @@ input, select, textarea {
 			}
 
 		#wrapper > section.intro > header > * {
-			width: 20rem;
+/*			width: 20rem;*/
 		}
 
 		#wrapper > section.intro > header:before {
-			margin-left: calc(50vw - 10rem);
+			margin-left: calc(40vw - 10rem);
 		}
 
 		@media screen and (max-width: 1152px) {
@@ -3453,7 +3453,7 @@ input, select, textarea {
 		}
 
 		#wrapper > section:last-of-type > header:after {
-			left: calc(50vw - 5rem - 0.25rem + 1px);
+			left: calc(40vw - 5rem - 0.25rem + 1px);
 		}
 
 		#wrapper .copyright {
@@ -3485,7 +3485,7 @@ input, select, textarea {
 
 				#wrapper > section > header:before {
 					height: calc(100% + 8rem);
-					left: calc(50vw - 4rem);
+					left: calc(40vw - 4rem);
 				}
 
 				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
@@ -3498,7 +3498,7 @@ input, select, textarea {
 				}
 
 				#wrapper > section > .content > section {
-					left: calc(-50vw - 4rem);
+					left: calc(-40vw - 4rem);
 				}
 
 					#wrapper > section > .content > section > header {
@@ -3506,11 +3506,11 @@ input, select, textarea {
 					}
 
 				#wrapper > section.intro > header > * {
-					width: 21rem;
+/*					width: 21rem;*/
 				}
 
 				#wrapper > section.intro > header:before {
-					margin-left: calc(50vw - 8rem);
+					margin-left: calc(40vw - 8rem);
 				}
 
 		}
@@ -3530,7 +3530,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 				#wrapper > section:last-of-type > header:after {
-					left: calc(50vw - 4rem - 0.25rem + 1px);
+					left: calc(40vw - 4rem - 0.25rem + 1px);
 				}
 
 				#wrapper .copyright {
