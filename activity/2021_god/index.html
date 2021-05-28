@@ -1,13 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="zh-Hant-TW">
 
- <head>
+<head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KNFPB22');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KNFPB22');
+
+    </script>
     <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76542419-5"></script>
@@ -44,28 +56,37 @@
 
     <meta name="keywords" content="minecraft,團隊,製圖小組,夢想啟航,靈感飛揚,夢想之都工作室,夢都夏令營" />
 
-     <!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '761687431383358');
-    fbq('track', 'PageView');
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '761687431383358');
+        fbq('track', 'PageView');
+
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 </head>
+
 <body class="is-preload">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Wrapper -->
     <div id="wrapper">
@@ -103,17 +124,39 @@
                     <li class="icon solid fa-star">活動主題：神話傳說</li>
                     <li class="icon solid fa-signal">活動特色：製圖過程透明</li>
                 </ul>
+                <style>
+                    .embed-container {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                        overflow: hidden;
+                        max-width: 100%;
+                    }
 
+                    .embed-container iframe,
+                    .embed-container object,
+                    .embed-container embed {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                </style>
+                <div class='embed-container'><iframe src='https://www.youtube.com/embed/ES0ahYoS45U' frameborder='0' allowfullscreen></iframe></div>
+                <p></p>
                 <ul class="actions">
                     <li><a href="../../" class="button primary large scrolly">夢都官網</a></li>
                     <li><a href="#contact" class="button large scrolly">聯繫夢都</a></li>
 
                 </ul>
+
             </div>
 
         </section>
 
-        
+
         <!-- Section -->
         <section id="news">
             <header>
@@ -124,7 +167,7 @@
                 <h2>夢都夏令營！活動網站上線!</h2>
                 <hr />
                 <ol>
-                    <li><a href="#">組長票選結束！名單已公布</a></li>
+                    <li><a href="#leader">組長票選結束！名單已公布</a></li>
                 </ol>
                 <hr />
 
@@ -200,21 +243,21 @@
             </div>
 
         </section>
-                <section>
-                    <header>
-                        <h2>組長介紹</h2>
-<!--                        <p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt ipsum suspendisse ultrices gravida.</p>-->
-                    </header>
-                    <div class="content">
-                        <div class="gallery">
-                            <a href="images/gallery/leader/1.png" class="landscape"><img src="images/gallery/leader/1.png" alt="" /></a>
-                            <a href="images/gallery/leader/2.png" class="landscape"><img src="images/gallery/leader/2.png" alt="" /></a>
-                            <a href="images/gallery/leader/3.png" class="landscape"><img src="images/gallery/leader/3.png" alt="" /></a>
-                            <a href="images/gallery/leader/4.png" class="landscape"><img src="images/gallery/leader/4.png" alt="" /></a>
-                            <a href="images/gallery/leader/5.png" class="landscape"><img src="images/gallery/leader/5.png" alt="" /></a>
-                        </div>
-                    </div>
-                </section>
+        <section id="leader">
+            <header>
+                <h2>組長介紹</h2>
+                <!--                        <p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt ipsum suspendisse ultrices gravida.</p>-->
+            </header>
+            <div class="content">
+                <div class="gallery">
+                    <a href="images/gallery/leader/1.jpg" class="landscape"><img src="images/gallery/leader/1.jpg" alt="" /></a>
+                    <a href="images/gallery/leader/2.jpg" class="landscape"><img src="images/gallery/leader/2.jpg" alt="" /></a>
+                    <a href="images/gallery/leader/3.jpg" class="landscape"><img src="images/gallery/leader/3.jpg" alt="" /></a>
+                    <a href="images/gallery/leader/4.jpg" class="landscape"><img src="images/gallery/leader/4.jpg" alt="" /></a>
+                    <a href="images/gallery/leader/5.jpg" class="landscape"><img src="images/gallery/leader/5.jpg" alt="" /></a>
+                </div>
+            </div>
+        </section>
 
 
         <!-- Section -->
