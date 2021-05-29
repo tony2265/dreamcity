@@ -163,7 +163,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #000000;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Microsoft JhengHei";
 		font-size: 1rem;
 		font-weight: 350;
 		letter-spacing: 0.0375em;
@@ -200,7 +200,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family: "Microsoft JhengHei", Helvetica, sans-serif;
 		font-weight: 600;
 		letter-spacing: 0.175em;
 		line-height: 1.75;
@@ -214,7 +214,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Microsoft JhengHei", Helvetica, sans-serif;
 		font-size: 5rem;
 		font-weight: 700;
 		letter-spacing: -0.05em;
