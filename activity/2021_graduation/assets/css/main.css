@@ -1865,8 +1865,8 @@ input, select, textarea {
 		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.6rem;
+		font-family: "Microsoft JhengHei", Helvetica, sans-serif;
+		font-size: 0.8rem;
 		font-weight: 600;
 		height: 3rem;
 		letter-spacing: 0.175em;
@@ -1913,7 +1913,7 @@ input, select, textarea {
 		input[type="button"].large,
 		button.large,
 		.button.large {
-			font-size: 0.75rem;
+			font-size: 0.8rem;
 			height: 3.2625rem;
 			line-height: 3.2625rem;
 			padding: 0 3.25rem;
@@ -2048,7 +2048,7 @@ input, select, textarea {
 				-webkit-flex-shrink: 0;
 				-ms-flex-shrink: 0;
 				flex-shrink: 0;
-				padding: 2rem 0 0 2rem;
+				padding: 0rem 0 0 2rem;
 				width: calc(100% - 2rem);
 			}
 
@@ -2945,8 +2945,8 @@ input, select, textarea {
 
 			.gallery a img {
 				display: block;
-				height: 25vw;
-				min-height: 18rem;
+/*				height: 25vw;*/
+/*				min-height: 18rem;*/
 				object-fit: contain;
 				object-position: center;
 				width: 100%;
@@ -2957,7 +2957,7 @@ input, select, textarea {
 			}
 
 				.gallery a.landscape img {
-					height: 30vw;
+/*					height: 30vw;*/
 				}
 
 			.gallery a.portrait img {
