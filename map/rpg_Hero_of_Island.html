@@ -83,7 +83,23 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
+    <script type="module">
+        import { Octokit } from 'https://cdn.skypack.dev/octokit';
+        try {
+            window.getGitData =async function () {
+                const octokit = new Octokit({
+                    owner: "tony2265",
+                    repo: "map"
+                });
+                return octokit.request("GET /repos/tony2265/map/releases");
+            }
+        }
+        catch (e) {
+            console.error(e);
+        }
+    </script>
 </head>
+
 
 <body class="is-preload">
     <!-- Google Tag Manager (noscript) -->
@@ -212,7 +228,7 @@
                                         <li>MC版本：1.16.5 </li>
                                         <li>地圖版本：V1.7 </li>
                                         <li>最後更新：2021-06-06</li>
-										<li id="downloadcount"></li>
+										<li id="show_count">下載次數：</li>
                                     </b>
                                 </ul>
                             </span>
@@ -528,24 +544,21 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-	<script>
-		window.onload = function show_alert() {
-			var requestURL = 'https://api.github.com/repos/tony2265/map/releases/assets/23807666';
-			var request = new XMLHttpRequest();
-			request.open('GET', requestURL);
-			request.responseType = 'json';
-			request.send();
-			request.onload = function() {
-				var json = request.response;
-				var download_count = json['download_count'] + 7739 + 6366;
-				document.getElementById('downloadcount').innerHTML = "下載次數：" + download_count;
-				//外加MediaFire、大陸下載
-			}
-
-		}
-
-	</script>
-
+    <script type="module">
+        window.onload = async function () {
+            let totalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'rpg_Hero_of_Island' ){
+                    data.assets.forEach(assets=>{
+                        totalCount += assets.download_count;
+                    })
+                    console.log(totalCount);
+                }
+            })
+            document.getElementById('show_count').innerText += totalCount+ 7739 + 6366;
+            // console.log(await window.totalCount)
+        }
+    </script>
 	<script type="module">
 		import confetti from 'https://cdn.skypack.dev/canvas-confetti';
 		window.fire = function() {

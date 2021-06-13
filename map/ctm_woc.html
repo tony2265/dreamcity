@@ -62,7 +62,23 @@
     src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+    <script type="module">
+        import { Octokit } from 'https://cdn.skypack.dev/octokit';
+        try {
+            window.getGitData =async function () {
+                const octokit = new Octokit({
+                    owner: "tony2265",
+                    repo: "map"
+                });
+                return octokit.request("GET /repos/tony2265/map/releases");
+            }
+        }
+        catch (e) {
+            console.error(e);
+        }
+    </script>
 </head>
+
 <body class="is-preload">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22"
