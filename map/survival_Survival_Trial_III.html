@@ -162,8 +162,8 @@
                             <h3>載點</h3>
                             <!-- 載點 -->
                             <p><a target="_blank" href="../map_installer/" class="button">夢都地圖下載器</a></p>
-                            <p><a target="_blank" href="https://github.com/tony2265/map/releases/download/survival_Survival_Trial_III/V1.2.zip" class="button">地圖檔V1.2</a></p>
-                            <p><a target="_blank" href="https://github.com/tony2265/resourcepack/releases/download/survival_Survival_Trial_III/Survival_Trial_III.zip" class="button">材質包V1.0</a></p>
+                            <p><a onclick="fire()" target="_self" href="https://github.com/tony2265/map/releases/download/survival_Survival_Trial_III/V1.2.zip" class="button">地圖檔V1.2</a></p>
+                            <p><a onclick="fire()" target="_self" href="https://github.com/tony2265/resourcepack/releases/download/survival_Survival_Trial_III/Survival_Trial_III.zip" class="button">材質包V1.0</a></p>
 
                         </div>
                     </section>
@@ -178,6 +178,8 @@
                                         <li>MC版本：1.16.5 </li>
                                         <li>地圖版本：V1.2 </li>
                                         <li>最後更新：2021-04-18</li>
+										<li id="show_count">下載次數：</li>
+
                                     </b>
                                 </ul>
                             </span>
@@ -405,6 +407,29 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="module">
+        window.onload = async function () {
+            let mtotalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'survival_Survival_Trial_III' ){
+                    data.assets.forEach(assets=>{
+                        mtotalCount += assets.download_count;
+                    })
+                    console.log(mtotalCount);
+                }
+				
+            })
+            document.getElementById('show_count').innerText += mtotalCount;
+
+        }
+    </script>
+	<script type="module">
+		import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+		window.fire = function() {
+			confetti();
+		}
+
+	</script>
 
 </body>
 

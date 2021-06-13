@@ -164,7 +164,7 @@
                             <span class="icon alt fa-download"></span>
                             <h3>載點</h3>
                             <!-- 載點 -->
-                            <p><a target="_blank" href="https://github.com/tony2265/map/releases/download/puzzle_Bullyhood/V1.5.rar" class="button">童言無忌V1.5</a></p>
+                            <p><a onclick="fire()" target="_self" href="https://github.com/tony2265/map/releases/download/puzzle_Bullyhood/V1.5.rar" class="button">童言無忌V1.5</a></p>
 
                         </div>
                     </section>
@@ -179,6 +179,7 @@
                                         <li>MC版本：1.12 </li>
                                         <li>地圖版本：V1.5 </li>
                                         <li>最後更新：2018-08-18</li>
+										<li id="show_count">下載次數：</li>
                                     </b>
                                 </ul>
                             </span>
@@ -462,6 +463,30 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="module">
+        window.onload = async function () {
+            let mtotalCount = 0;
+            let wtotalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'puzzle_Bullyhood' ){
+                    data.assets.forEach(assets=>{
+                        mtotalCount += assets.download_count;
+                    })
+                    console.log(mtotalCount);
+                }
+				
+            })
+            document.getElementById('show_count').innerText += mtotalCount+wtotalCount+ 28551;
+
+        }
+    </script>
+	<script type="module">
+		import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+		window.fire = function() {
+			confetti();
+		}
+
+	</script>
 
 </body>
 
