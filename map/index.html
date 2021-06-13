@@ -453,7 +453,7 @@
                             分類：PvP、PvE <br>
                         </p>
                         <p><a href="ctm_woc">詛咒之冬</a><br><br>
-                            下載次數：<u>30272</u>（2020.09.10）<br>
+                            下載次數：<u id="ctm_woc"></u><br>
                             風雪交加之夜，回鄉的旅者，失序的世界、時鐘滴答作響。這個世界究竟...<br>
                             分類：CTM <br>
                         </p>
@@ -462,12 +462,12 @@
                             分類：CTM <br>
                         </p>
                         <p><a href="ctm_Mysterious_Territory">夢都秘境</a><br><br>
-                            下載次數：<u>6206</u>（2020.09.10）<br>
+                            下載次數：<u id="ctm_Mysterious_Territory"></u><br>
                             夢想之都團員的奇思妙想之地<br>
                             分類：CTM <br>
                         </p>
                         <p><a href="rpg_Hero_of_Island">島國勇者</a><br><br>
-                            下載次數：<u>10401</u>（2020.09.10）<br>
+                            下載次數：<u id="rpg_Hero_of_Island"></u><br>
                             夢都首張RPG地圖，隨著克拉特的腳步，讓我們一步步揭開諾斯克島，背後那神秘的面紗<br>
                             分類：RPG <br>
                         </p>
@@ -476,22 +476,6 @@
                 </div>
 
             </section>
-
-
-            <!-- Three -->
-            <!--
-            <section id="three">
-                <div class="inner">
-                    <header class="major">
-                        <h2></h2>
-                    </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-                    <ul class="actions">
-                        <li><a target="_blank" href="generic.html" class="button next">Get Started</a></li>
-                    </ul>
-                </div>
-            </section>
--->
 
         </div>
 
@@ -523,6 +507,53 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script type="module">
+        window.onload = async function () {
+            let totalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'rpg_Hero_of_Island' ){
+                    data.assets.forEach(assets=>{
+                        totalCount += assets.download_count;
+                    })
+                    console.log(totalCount);
+                }
+            })
+            document.getElementById('rpg_Hero_of_Island').innerText += totalCount+ 7739 + 6366;
+        }
+    </script>
+    
+    <script type="module">
+        window.onload = async function () {
+            let totalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'ctm_Mysterious_Territory' ){
+                    data.assets.forEach(assets=>{
+                        totalCount += assets.download_count;
+                    })
+                    console.log(totalCount);
+                }
+            })
+            document.getElementById('ctm_Mysterious_Territory').innerText += totalCount+ 5666 + 1088;
+        }
+    </script>
+    
+    <script type="module">
+        window.onload = async function () {
+            let totalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'ctm_woc' ){
+                    data.assets.forEach(assets=>{
+                        totalCount += assets.download_count;
+                    })
+                    console.log(totalCount);
+                }
+            })
+            document.getElementById('ctm_woc').innerText += totalCount+ 22057;
+        }
+    </script>
+
+
 
 </body>
 
