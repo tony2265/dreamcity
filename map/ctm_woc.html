@@ -177,10 +177,9 @@
                             <span class="icon alt fa-download"></span>
                             <h3>載點</h3>
                             <!-- 載點 -->
-                            <p><a target="_blank" href="https://github.com/tony2265/map/releases/download/ctm_woc/V1.6.zip" class="button">詛咒之冬 V1.6</a>
+                            <p><a onclick="fire()" target="_self" href="https://github.com/tony2265/map/releases/download/ctm_woc/V1.6.zip" class="button">詛咒之冬 V1.6</a>
                             </p>
-                            <p><a target="_blank" href="https://github.com/tony2265/resourcepack/releases/download/ctm_woc/Winter_of_Curse.zip" class="button">材質包v1.11</a></p>
-                            <p><a target="_blank" href="https://goo.gl/forms/DrzEOkXM47CVQuw93" class="button">地圖回饋單</a></p>
+                            <p><a onclick="fire()" target="_self" href="https://github.com/tony2265/resourcepack/releases/download/ctm_woc/Winter_of_Curse.zip" class="button">材質包v1.11</a></p>
 
                         </div>
                     </section>
@@ -195,6 +194,7 @@
                                         <li>MC版本：1.12.2 </li>
                                         <li>地圖版本：V1.6 </li>
                                         <li>最後更新：2019-02-12</li>
+										<li id="show_count">下載次數：</li>
                                     </b>
                                 </ul>
                             </span>
@@ -334,6 +334,29 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="module">
+        window.onload = async function () {
+            let wtotalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'ctm_woc' ){
+                    data.assets.forEach(assets=>{
+                        wtotalCount += assets.download_count;
+                    })
+                    console.log(wtotalCount);
+                }
+				
+            })
+            document.getElementById('show_count').innerText += wtotalCount+ 22057;
+
+        }
+    </script>
+	<script type="module">
+		import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+		window.fire = function() {
+			confetti();
+		}
+
+	</script>
 
 </body>
 
