@@ -443,7 +443,7 @@
                             分類：生存 <br>
                         </p>
                         <p><a href="puzzle_Bullyhood">童言無忌</a><br><br>
-                            下載次數：<u>29092</u>（2020.09.10）<br>
+                            下載次數：<u id="puzzle_Bullyhood"></u><br>
                             挑戰複雜的解謎，尋找詭譎的成就。主角樂樂遭遇的背後，真相正等待你來發掘...<br>
                             分類：解謎 <br>
                         </p>
@@ -510,50 +510,42 @@
 
     <script type="module">
         window.onload = async function () {
-            let totalCount = 0;
+            let rtotalCount = 0;
+            let mtotalCount = 0;
+            let wtotalCount = 0;
+            let ctotalCount = 0;
             (await getGitData()).data.forEach(data=>{
                 if(data.tag_name == 'rpg_Hero_of_Island' ){
                     data.assets.forEach(assets=>{
-                        totalCount += assets.download_count;
+                        rtotalCount += assets.download_count;
                     })
-                    console.log(totalCount);
+                    console.log(rtotalCount);
+                }if(data.tag_name == 'ctm_Mysterious_Territory' ){
+                    data.assets.forEach(assets=>{
+                        mtotalCount += assets.download_count;
+                    })
+                    console.log(mtotalCount);
+                }if(data.tag_name == 'ctm_woc' ){
+                    data.assets.forEach(assets=>{
+                        wtotalCount += assets.download_count;
+                    })
+                    console.log(wtotalCount);
+                }if(data.tag_name == 'puzzle_Bullyhood' ){
+                    data.assets.forEach(assets=>{
+                        ctotalCount += assets.download_count;
+                    })
+                    console.log(ctotalCount);
                 }
+				
             })
-            document.getElementById('rpg_Hero_of_Island').innerText += totalCount+ 7739 + 6366;
+            document.getElementById('rpg_Hero_of_Island').innerText += rtotalCount+ 7739 + 6366;
+            document.getElementById('ctm_woc').innerText += wtotalCount+ 22057;
+            document.getElementById('ctm_Mysterious_Territory').innerText += mtotalCount+ 5666 + 1088;
+            document.getElementById('puzzle_Bullyhood').innerText += ctotalCount+ 28551;
+
         }
     </script>
     
-    <script type="module">
-        window.onload = async function () {
-            let totalCount = 0;
-            (await getGitData()).data.forEach(data=>{
-                if(data.tag_name == 'ctm_Mysterious_Territory' ){
-                    data.assets.forEach(assets=>{
-                        totalCount += assets.download_count;
-                    })
-                    console.log(totalCount);
-                }
-            })
-            document.getElementById('ctm_Mysterious_Territory').innerText += totalCount+ 5666 + 1088;
-        }
-    </script>
-    
-    <script type="module">
-        window.onload = async function () {
-            let totalCount = 0;
-            (await getGitData()).data.forEach(data=>{
-                if(data.tag_name == 'ctm_woc' ){
-                    data.assets.forEach(assets=>{
-                        totalCount += assets.download_count;
-                    })
-                    console.log(totalCount);
-                }
-            })
-            document.getElementById('ctm_woc').innerText += totalCount+ 22057;
-        }
-    </script>
-
-
 
 </body>
 
