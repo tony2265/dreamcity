@@ -1,0 +1,19 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Main */
+
+	#main {
+		padding-top: 8rem !important;
+
+		@include breakpoint('<=xlarge') {
+			padding-top: 6rem !important;
+		}
+
+		@include breakpoint('<=medium') {
+			padding-top: 4rem !important;
+		}
+	}

@@ -1,0 +1,84 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Split */
+
+	.split {
+		@include vendor('display', 'flex');
+		margin: 0 auto (_size(element-margin) * 1.5);
+
+		h2 {
+			border-bottom: 2px solid;
+			display: inline-block;
+			font-size: 1rem;
+			letter-spacing: _size(letter-spacing);
+			margin-bottom: _size(element-margin) * 1.25;
+			padding-bottom: 1rem;
+		}
+
+		.content {
+			border-right: 1px solid;
+			min-width: 70%;
+			padding-right: 3rem;
+			width: 70%;
+
+			p {
+				margin-bottom: _size(element-margin) * 1.25;
+			}
+
+			> *:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.contact-icons {
+			margin-bottom: 0;
+			padding-left: 4rem;
+		}
+	}
+
+	@include breakpoint('<=large') {
+		.split {
+			.content {
+				min-width: 60%;
+				width: 60%;
+			}
+		}
+	}
+
+	@include breakpoint('<=medium') {
+		.split {
+			@include vendor('flex-wrap', 'wrap');
+
+			.content {
+				border-bottom: 1px solid;
+				border-right: none;
+				padding-bottom: 3rem;
+				padding-right: 0;
+				width: 100%;
+			}
+
+			.contact-icons {
+				margin-bottom: 0;
+				padding-left: 0;
+				padding-top: 3rem;
+			}
+		}
+	}
+
+	@mixin color-split($p: null) {
+		.split {
+			h2 {
+				border-color: _palette($p, fg-bold);
+			}
+
+			.content {
+				border-color: _palette($p, border);
+			}
+		}
+	}
+
+	@include color-split;

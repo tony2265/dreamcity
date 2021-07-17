@@ -1,0 +1,212 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Header */
+
+	@include keyframes('reveal-header') {
+		0% { top: -4rem; opacity: 0; }
+		100% { top: 0; opacity: 1; }
+	}
+
+	body {
+		#page-wrapper {
+			padding-top: 4rem;
+
+			@include breakpoint('<=small') {
+				padding-top: 3rem;
+			}
+		}
+	}
+
+	#header {
+		@include vendor('align-items', 'center');
+		@include vendor('display', 'flex');
+		@include vendor('justify-content', 'flex-end');
+		@include vendor('transition-duration', '#{_duration(transition)}');
+		@include vendor('transition-property', 'background-color padding');
+		@include vendor('transition-timing-function', 'ease-in-out');
+		background: _palette(invert, fg-bold);
+		border: none;
+		color: _palette(fg);
+		height: 4rem;
+		left: 0;
+		line-height: 4rem;
+		padding: 0;
+		position: fixed;
+		text-transform: uppercase;
+		top: 0;
+		width: 100%;
+		z-index: _misc(z-index-base) + 1;
+
+		> .logo {
+			@include vendor('flex', '1');
+			cursor: default;
+			display: block;
+			font-size: 1rem;
+			letter-spacing: _size(letter-spacing);
+			padding-left: 2rem;
+			white-space: nowrap;
+
+			a {
+				@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+				color: inherit;
+				font-weight: _font(weight-bold);
+				letter-spacing: _size(letter-spacing);
+				text-decoration: none;
+
+				span {
+					font-weight: _font(weight);
+				}
+			}
+		}
+
+		> a {
+			@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+			color: inherit;
+			display: block;
+			font-weight: _font(weight-light);
+			letter-spacing: _size(letter-spacing);
+			padding: 0 0.75rem;
+			text-decoration: none;
+
+			&:hover, &:focus {
+				color: rgba(_palette(fg-bold),0.5);
+			}
+
+			&[href="#menu"] {
+				@include vendor('transition', 'background #{_duration(transition)} ease-in-out');
+				@include icon(false, solid);
+				@include vendor('display', 'flex');
+				@include vendor('align-items', 'center');
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				border-left: 1px solid _palette(border);
+				height: calc(4rem - 1px);
+				line-height: 4rem;
+				margin-left: 0.5rem;
+				padding: 0 2rem;
+
+				span {
+					@include vendor('order', '1');
+					font-family: _font(family);
+					font-size: 0.65rem;
+					font-weight: _font(weight-bold);
+					margin-right: 0.25rem;
+				}
+
+				&:hover, &:focus {
+					background-color: _palette( border-bg);
+					color: _palette(fg-bold);
+					
+					&:before {
+						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
+					}
+				}
+
+				&:before {
+					@include vendor('order', '2');
+					background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: 1.75rem;
+					content: '';
+					float: right;
+					height: 1rem;
+					margin-left: 0.5rem;
+					opacity: 1;
+					width: 1rem;
+				}
+			}
+		}
+
+		&.alt {
+			background-color: transparent;
+			border-bottom: 1px solid _palette(invert, border);
+			color: _palette(invert, fg-bold);
+			position: absolute;
+
+			> a {
+				&:hover, &:focus {
+					color: _palette(invert, fg-bold);
+				}
+
+				&[href="#menu"] {
+					border-left: 1px solid _palette(invert, border);
+
+					&:hover, &:focus {
+						background-color: _palette(invert, border-bg);
+
+						&:before {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(invert, fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
+						}
+					}
+
+					&:before {
+						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(invert, fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
+					}
+				}
+			}
+		}
+
+		& + #banner {
+			margin-top: -4rem;
+		}
+
+		&.reveal {
+			@include vendor('animation', 'reveal-header 0.5s ease');
+
+			> .logo {
+				padding-left: 1.25rem;
+			}
+
+			> nav {
+				padding-right: 0;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			@include vendor('align-items', 'flex-start');
+			height: 3rem;
+			line-height: 3rem;
+			padding: 0 0 0 0.5rem;
+
+			> .logo {
+				font-size: 0.8rem;
+				padding-left: 1rem;
+
+				span {
+					display: none;
+				}
+			}
+
+			> a {
+				&[href="#menu"] {
+					height: calc(3rem - 1px);
+					line-height: 3rem;
+					padding: 0 1.5rem;
+
+					&:before {
+						margin-left: 0;
+					}
+
+					span {
+						display: none;
+					}
+
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			min-width: 320px;
+
+			& + #banner {
+				margin-top: -5rem;
+			}
+		}
+	}

@@ -1,0 +1,109 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Tabs */
+
+	.tabs {
+		width: 100%;
+
+		> .titles {
+			@include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+			@include vendor('justify-content', 'flex-start');
+			@include vendor('user-select', 'none');
+			list-style: none;
+			margin: 0 0 _size(element-margin) 0;
+			padding: 0;
+
+			&:before {
+				content: '';
+				display: block;
+				height: _size(element-height) * 2;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 0;
+			}
+
+			> .title {
+				@include vendor('transition-property', 'color, background-color, box-shadow');
+				@include vendor('transition-duration', '#{_duration(transition)}');
+				font-size: 1rem;
+				font-weight: _font(weight-bold);
+				letter-spacing: _size(letter-spacing);
+				margin-right: 5rem;
+				margin-bottom: _size(element-margin);
+				padding-bottom: 1rem;
+				padding: 0;
+				position: relative;
+				text-align: center;
+				text-transform: uppercase;
+				z-index: 1;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:hover {
+					@include vendor('animation', 'tab-title 0.5s ease forwards');
+				}
+
+				&.active {
+					@include vendor('animation', 'tab-title 0.5s ease forwards');
+				}
+			}
+
+			@include breakpoint('<=small') {
+				margin: 0 0 1rem 0;
+
+				> .title {
+					margin-bottom: 1.25rem;
+					margin-right: 1.25rem;
+				}
+			}
+
+			@include breakpoint('<=xsmall') {
+				margin: 0 0 1rem 0;
+
+				> .title {
+					font-size: 0.75rem;
+					margin-bottom: 1rem;
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		> .panels {
+			> .panel {
+				@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+				opacity: 0;
+
+				&.active {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	@mixin color-tabs($p: null) {
+
+		.tabs {
+			> .titles {
+				> .title {
+					&:hover {
+						box-shadow: 0 2px 0 0 _palette($p, border);
+					}
+
+					&.active {
+						box-shadow: 0 2px 0 0 _palette($p, fg-bold);
+					}
+				}
+			}
+		}
+
+	}
+
+	@include color-tabs;

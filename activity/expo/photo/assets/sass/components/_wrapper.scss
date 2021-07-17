@@ -1,0 +1,107 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Wrapper */
+
+	/// Sets the colors of the wrapper's top/bottom edges.
+	/// @param {string} $color Color.
+	@mixin wrapper-edges-color($color: black) {
+		&:before, &:after {
+			background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,0 0,100 100,100" style="fill:#{$color};" /></svg>');
+			z-index: 2;
+		}
+	}
+
+	.wrapper {
+		@include wrapper-edges-color(_palette(bg));
+		padding: 10rem 0 12rem 0;
+		position: relative;
+
+		> .inner {
+			margin: 0 auto;
+			max-width: 65rem;
+			width: calc(100% - 4rem);
+		}
+
+		&:before, &:after {
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			height: 6rem;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			@include vendor('transform', 'translateY(-100%) scale(-1, 1)');
+			content: '';
+			top: 0;
+		}
+
+		&.alt {
+			padding-bottom: 1rem;
+
+			&:after {
+				@include vendor('transform', 'translateY(100%) rotate(180deg)');
+				bottom: 0;
+				content: '';
+			}
+		}
+
+		&.style2 {
+			@include wrapper-edges-color(_palette(bg-alt));
+			background: _palette(bg-alt);
+		}
+
+		@include breakpoint('<=xlarge') {
+			padding: 8rem 0 10rem 0;
+		}
+
+		@include breakpoint('<=large') {
+			padding: 6rem 0 8rem 0;
+
+			&:before, &:after {
+				height: 4rem;
+			}
+
+			> .inner {
+				max-width: 75rem;
+				width: calc(100% - 8rem);
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			padding: 4rem 0 6rem 0;
+
+			&:before, &:after {
+				height: 3rem;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			padding: 4rem 0 6rem 0;
+
+			> .inner {
+				width: calc(100% - 6rem);
+			}
+
+			&:before, &:after {
+				height: 2rem;
+			}
+
+			&.alt {
+				padding-bottom: 0;
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			padding: 3rem 0 3rem 0;
+
+			> .inner {
+				width: calc(100% - 4rem);
+			}
+		}
+	}

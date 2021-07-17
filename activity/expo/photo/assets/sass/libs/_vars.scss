@@ -1,0 +1,69 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+// Misc.
+	$misc: (
+		z-index-base:				10000,
+		gallery-lightbox-opacity:	0.875
+	);
+
+// Duration.
+	$duration: (
+		menu:						0.5s,
+		nav:						0.5s,
+		transition:					0.2s,
+		bg-fadein:					2s,
+		bg-transition:				3s,
+		bg-slide:					45s, // (lower = faster, higher = slower)
+		gallery-lightbox-fadein:	0.5s
+	);
+
+// Size.
+	$size: (
+		border-radius:		10px,
+		border-width:		1px,
+		element-height:		3rem,
+		element-margin:		2rem,
+		letter-spacing:		0.25rem,
+		letter-spacing-alt:	0.1rem
+	);
+
+// Font.
+	$font: (
+		family:				('Lato', Helvetica, sans-serif),
+		family-head:		('Oswald', Helvetica, sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				300,
+		weight-light:		300,
+		weight-semi-bold:	400,
+		weight-bold:		900,
+		weight-head:		600
+	);
+
+// Palette.
+	$palette: (
+		bg:					#ffffff,
+		bg-alt:				#f9f9f9,
+		fg:					#282828,
+		fg-bold:			#000000,
+		fg-light:			rgba(#282828, 0.50),
+		border:				rgba(#637485,0.25),
+		border-bg:			rgba(#637485,0.075),
+		border2:			rgba(#637485,0.4),
+		border2-bg:			rgba(#637485,0.075),
+
+		invert: (
+			bg:				#000000,
+			fg:				#ffffff,
+			fg-bold:		#ffffff,
+			fg-light:		rgba(#ffffff, 0.75),
+			border:			rgba(255,255,255,0.25),
+			border-bg:		rgba(255,255,255,0.065),
+			border2:		rgba(0,0,0,0.25),
+			border2-bg:		rgba(0,0,0,0.065)
+		)
+
+	);

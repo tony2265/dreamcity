@@ -1,0 +1,89 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Contact Icons */
+
+	ul.contact-icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			padding-top: 2rem;
+
+			.icon {
+
+				&:before {
+					border-radius: 50%;
+					display: inline-block;
+					height: 3rem;
+					line-height: 3rem;
+					margin-right: 1rem;
+					text-align: center;
+					width: 3rem;
+				}
+
+				> .label {
+					display: inline-block;
+				}
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+
+			li {
+				width: 50%;
+
+				&:nth-child(2) {
+					padding-top: 0;
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+
+			li {
+				width: 100%;
+
+				&:nth-child(2) {
+					padding-top: 2.5rem;
+				}
+			}
+		}
+	}
+
+	@mixin color-contact-icons($p: null) {
+
+		ul.contact-icons {
+			li {
+				.icon {
+					&:before {
+						@if $p == 'invert' {
+							background: _palette($p, bg);
+							color: _palette($p, fg-bold);
+						}
+						@else {
+							background: _palette(invert, bg);
+							color: _palette(invert, fg-bold);
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	@include color-contact-icons;

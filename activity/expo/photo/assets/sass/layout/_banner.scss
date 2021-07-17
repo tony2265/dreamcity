@@ -1,0 +1,253 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Banner */
+
+	#banner {
+		@include color(invert);
+		align-items: center;
+		color: _palette(invert,fg-bold);
+		display: flex;
+		justify-content: center;
+		min-height: 40rem;
+		min-height: 95vh;
+		position: relative;
+		width: 100%;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			@include vendor('pointer-events', 'none');
+			background-image: linear-gradient(180deg, rgba(0,0,0,0.325), rgba(0,0,0,0));
+			z-index: 2;
+		}
+
+		h1 {
+			border-bottom: 1px solid _palette(invert, border);
+			color: _palette(invert, fg-bold);
+			font-size: 4.75rem;
+			margin: 0 auto;
+			padding-bottom: 3rem;
+			position: relative;
+			text-align-last: justify;
+			text-align: justify;
+			opacity: 0.95;
+		}
+
+		.inner {
+			@include vendor('transition', 'opacity 1.5s ease-in-out');
+			margin: 0 auto;
+			max-width: 65rem;
+			opacity: 1;
+			position: relative;
+			width: calc(100% - 4rem);
+			z-index: 3;
+		}
+
+		.content {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
+			position: relative;
+			text-align: justify;
+			width: 100%;
+
+			p {
+				border-right: 1px solid _palette(invert, border);
+				font-size: 1.5rem;
+				font-weight: _font(weight-semi-bold);
+				min-width: 70%;
+				padding: 3rem 3rem 3rem 0;
+			}
+
+			ul {
+				@include vendor('justify-content', 'flex-end');
+			}
+		}
+
+		.bg {
+			@include vendor('transition', 'opacity #{_duration(bg-fadein)} ease-in-out');
+			height: 100%;
+			left: 0;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+			opacity: 0.85;
+
+			div {
+				@include vendor('transition', ('opacity #{_duration(bg-transition)} ease'));
+				background-size: cover;
+				height: 100%;
+				left: 0;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				visibility: hidden;
+				width: 150%;
+
+				&.visible {
+					@include vendor('animation', 'bg #{_duration(bg-slide)} linear infinite');
+					opacity: 1;
+					visibility: visible;
+					z-index: 1;
+
+					&.top {
+						z-index: 2;
+					}
+
+					@include breakpoint('<=large') {
+						@include vendor('animation', 'bg #{_duration(bg-slide) * 0.65} linear infinite');
+					}
+
+					@include breakpoint('<=small') {
+						@include vendor('animation', 'bg #{_duration(bg-slide) * 0.4} linear infinite');
+					}
+				}
+
+				&:only-child {
+					@include vendor('animation-direction', 'alternate !important');
+				}
+			}
+
+			body.is-preload & {
+				opacity: 0;
+			}
+		}
+
+		@include keyframes(bg) {
+			0% {
+				@include vendor('transform', 'translateX(0)');
+			}
+
+			100% {
+				@include vendor('transform', 'translateX(-25%)');
+			}
+		}
+
+		@include breakpoint('<=xlarge') {
+			padding-top: 4rem;
+		}
+
+		@include breakpoint('<=large') {
+			min-height: 90vh;
+			padding-top: 3rem;
+
+			.inner {
+				margin: 0 auto;
+				max-width: 75rem;
+				width: calc(100% - 8rem);
+			}
+
+			h1 {
+				font-size: 4rem;
+				padding-bottom: 3rem;
+				//text-align-last: left;
+				//text-align: left;
+			}
+
+			.content {
+				p {
+					font-size: 1.25rem;
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			height: 95vh;
+			min-height: 700px;
+			padding-top: 3rem;
+
+			h1 {
+				font-size: 3rem;
+				padding-bottom: 3rem;
+				text-align-last: center;
+				text-align: center;
+			}
+
+			.content {
+				p {
+					font-size: 1.25rem;
+				}
+			}
+
+			.content {
+				@include vendor('flex-wrap', 'wrap');
+				width: 100%;
+
+				p {
+					border-right: none;
+					font-size: 1.25rem;
+					min-width: 100%;
+					padding: 3rem 0 0 0;
+					text-align: center;
+				}
+
+				ul {
+					@include vendor('justify-content', 'center');
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			min-height: 600px;
+
+			h1 {
+				font-size: 2.5rem;
+				padding-bottom: 2rem;
+			}
+
+			.inner {
+				width: calc(100% - 6rem);
+			}
+
+			.content {
+				p {
+					padding-top: 2rem;
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			min-height: 650px;
+			padding-top: 4rem;
+
+			.inner {
+				width: calc(100% - 4rem);
+			}
+
+			h1 {
+				padding-bottom: 2rem;
+				text-align-last: center;
+				text-align: center;
+			}
+
+			.content {
+				@include vendor('flex-wrap', 'wrap');
+				width: 100%;
+
+				p {
+					font-size: 1.15rem;
+					padding-top: 2rem;
+				}
+
+				ul {
+					@include vendor('justify-content', 'center');
+				}
+			}
+		}
+
+		body.is-preload & {
+			.inner {
+				opacity: 0;
+			}
+		}
+	}

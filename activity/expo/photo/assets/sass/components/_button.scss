@@ -1,0 +1,160 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
+		border-radius: _size(border-radius);
+		border: 2px solid;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.7rem;
+		font-weight: _font(weight-bold);
+		height: 3rem;
+		letter-spacing: _size(letter-spacing-alt);
+		line-height: 2.75rem;
+		padding: 0 1.5rem;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		&.icon {
+			border-bottom: 2px solid;
+
+			&:before {
+				margin-right: 0.5rem;
+			}
+		}
+
+		&.fit {
+			width: 100%;
+		}
+
+		&.small {
+			font-size: 0.65rem;
+			height: 2.5rem;
+			line-height: 2.25rem;
+		}
+
+		&.large {
+			font-size: 1rem;
+			height: 3.75rem;
+			line-height: 3.5rem;
+			padding: 0 2.25rem;
+		}
+
+		&.next {
+			padding-right: 4.5rem;
+
+			&.fit {
+				padding-left: 1.5rem!important;
+				text-align: left;
+			}
+
+			&:after {
+				background-position: center right;
+				background-repeat: no-repeat;
+				background-size: 25px 15px;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				right: 1.5rem;
+				top: 0;
+				vertical-align: middle;
+				width: 1.25rem;
+			}
+		}
+
+		&.disabled,
+		&:disabled {
+			@include vendor('pointer-events', 'none');
+			opacity: 0.25;
+		}
+
+		@include breakpoint('<=large') {
+			&.large {
+				font-size: 1rem;
+				height: 4.25rem;
+				line-height: 4rem;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			&.alt {
+				padding-left: 1.5rem!important;
+				text-align: left;
+			}
+
+			&.large {
+				font-size: 0.85rem;
+				height: 3.75rem;
+				line-height: 3.5rem;
+				text-align: left;
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			padding: 0;
+		}
+	}
+
+	@mixin color-button($p: null) {
+
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			background-color: transparent;
+			border-color: _palette($p, fg-bold);
+			color: _palette($p, fg-bold) !important;
+
+			&:after {
+				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette($p, fg-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+			}
+
+			&:hover, &:focus {
+				background-color: _palette($p, border-bg);
+			}
+
+			&:active {
+				background-color: opacify(_palette($p, border-bg), 0.1);
+			}
+
+			&.icon {
+				&:before {
+					color: _palette($p, fg-bold);
+				}
+			}
+
+			&.primary {
+				box-shadow: none;
+				background-color: _palette(invert, bg);
+				color: _palette(invert, fg-bold) !important;
+
+				&:hover {
+					background-color: transparentize(_palette(invert, bg), 0.25);
+				}
+				
+				&.icon {
+					&:before {
+						color: _palette(invert, fg-bold) !important;
+					}
+				}
+			}
+		}
+	}
+
+	@include color-button;
