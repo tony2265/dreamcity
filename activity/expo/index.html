@@ -41,6 +41,56 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="Shortcut Icon" type="image/x-icon" href="../../images/logo.ico" />
 
+	<!-- og -->
+	<meta property="og:title" content="創造我們的世博：世界博覽會建造行動">
+	<meta property="og:description" content="由群眾自造Netizen Productions任活動主辦單位、平行世界建造局任創意執行單位、夢想之都工作室任活動管理單位，三者協辦合作的一項公益參與的Minecraft建築創作活動。">
+	<meta name="description" content="由群眾自造Netizen Productions任活動主辦單位、平行世界建造局任創意執行單位、夢想之都工作室任活動管理單位，三者協辦合作的一項公益參與的Minecraft建築創作活動。">
+    <meta property="og:image" content="https://www.dreamcity.studio/activity/expo/images/expo.jpg">
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '761687431383358');
+		fbq('track', 'PageView');
+
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+	<script type="module">
+		import {
+			Octokit
+		} from 'https://cdn.skypack.dev/octokit';
+		try {
+			window.getGitData = async function() {
+				const octokit = new Octokit({
+					owner: "tony2265",
+					repo: "map"
+				});
+				return octokit.request("GET /repos/tony2265/map/releases");
+			}
+		} catch (e) {
+			console.error(e);
+		}
+
+	</script>
+
+
 </head>
 
 <body class="is-preload">
