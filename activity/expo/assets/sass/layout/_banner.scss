@@ -1,0 +1,156 @@
+///
+/// Relativity by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Banner */
+
+	#banner {
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'column');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'center');
+		background-image: url('../../images/banner.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+		padding: 8rem 0;
+		overflow: hidden;
+		position: relative;
+
+		> .content {
+			@include color-typography(accent1);
+			@include vendor('transition', (
+				'transform 0.5s ease-in-out',
+				'opacity 0.5s ease-in-out'
+			));
+			padding: 2.75rem;
+			width: 100%;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+			margin-top: 2rem;
+			opacity: 1;
+
+			> * {
+				margin: (_size(element-margin) * 0.125) 0 0 0;
+			}
+
+			> :first-child {
+				margin-top: 0;
+			}
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+
+			h1 {
+				font-size: 2.25rem;
+			}
+
+			p {
+				font-size: 1.25rem;
+			}
+		}
+
+		> .more {
+			background-image: svg-url('<svg zoomAndPan="disable" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="20px" viewBox="0 0 40px 20px"><style type="text/css">line { stroke: #{_palette(accent1, fg-bold)}; stroke-width: 0.75px; }</style><line x1="0" y1="0" x2="20" y2="20" /><line x1="20" y1="20" x2="40" y2="0" /></svg>');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 3rem 1.5rem;
+			width: 6rem;
+			height: 6rem;
+			text-align: center;
+			color: _palette(accent1, fg-bold);
+			border-bottom: 0;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 3rem);
+			text-indent: 6rem;
+			white-space: nowrap;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		&:before {
+			@include vendor('pointer-events', 'none');
+			@include vendor('transition', 'opacity 2s ease-in-out');
+			@include vendor('transition-delay', '0.5s');
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: _palette(bg-alt);
+			opacity: 0;
+		}
+
+		&:after {
+			@include vendor('pointer-events', 'none');
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(0deg, rgba(0,0,0,0.625), rgba(0,0,0,0) 50%, rgba(0,0,0,0.625));
+		}
+
+		#header + & {
+			margin-top: (_size(header, default) * -1);
+		}
+
+		body.is-preload & {
+			> .content {
+				@include vendor('transform', 'scale(1.05)');
+				opacity: 0;
+			}
+
+			&:before {
+				opacity: 1;
+			}
+		}
+
+		@include breakpoint('<=large') {
+			background-attachment: scroll;
+		}
+
+		@include breakpoint('<=medium') {
+			> .content {
+				margin-top: 0;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			> .content {
+				padding: 1.75rem;
+
+				h1 {
+					font-size: 1.75rem;
+				}
+
+				p {
+					font-size: 1rem;
+				}
+			}
+
+			#header + & {
+				margin-top: (_size(header, small) * -1);
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			padding: 12rem 0;
+			min-height: 0;
+
+			> .more {
+				display: none;
+			}
+		}
+	}

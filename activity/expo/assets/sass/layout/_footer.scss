@@ -1,0 +1,31 @@
+///
+/// Relativity by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Footer */
+
+	#footer {
+		@include padding(3.5rem, 0);
+		color: _palette(fg-light);
+		text-align: center;
+
+		ul {
+			&.icons {
+				margin-bottom: (_size(element-margin) * 0.5);
+			}
+		}
+
+		a {
+			color: inherit;
+		}
+
+		@include breakpoint('<=large') {
+			@include padding(3rem, 3rem);
+		}
+
+		@include breakpoint('<=small') {
+			@include padding(2rem, 1.75rem);
+		}
+	}

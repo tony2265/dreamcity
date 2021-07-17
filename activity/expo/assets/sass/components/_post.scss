@@ -1,0 +1,224 @@
+///
+/// Relativity by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Post */
+
+	.post {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		margin: 0 0 (_size(element-margin) * 1.75) 0;
+		min-height: 28rem;
+
+		> .content {
+			padding: 5rem 4rem 5rem 0;
+			width: 60%;
+
+			header {
+				.category {
+					font-weight: _font(weight-bold);
+					display: block;
+					margin: 0 0 (_size(element-margin) * 0.175) 0;
+				}
+			}
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		> .image {
+			@include vendor('align-self', 'stretch');
+			width: 40%;
+			min-height: inherit;
+			border-radius: _size(border-radius);
+
+			img {
+				border-radius: _size(border-radius);
+			}
+		}
+
+		&.alt {
+			@include vendor('flex-direction', 'row-reverse');
+
+			> .content {
+				padding: 5rem 0 5rem 4rem;
+			}
+		}
+
+		&.style1 {
+		}
+
+		&.style2 {
+			border-radius: _size(border-radius);
+
+			> .content {
+				padding: 5rem 4rem;
+			}
+
+			> .image {
+				border-radius: 0 _size(border-radius) _size(border-radius) 0;
+
+				img {
+					border-radius: 0 _size(border-radius) _size(border-radius) 0;
+				}
+			}
+
+			&.alt {
+				@include vendor('flex-direction', 'row-reverse');
+
+				> .content {
+					padding: 5rem 4rem;
+				}
+
+				> .image {
+					border-radius: _size(border-radius) 0 0 _size(border-radius);
+
+					img {
+						border-radius: _size(border-radius) 0 0 _size(border-radius);
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			> .content {
+				padding: 4rem 3rem 4rem 0;
+				width: 50%;
+			}
+
+			> .image {
+				width: 50%;
+			}
+
+			&.alt {
+				> .content {
+					padding: 4rem 0 4rem 3rem;
+				}
+			}
+
+			&.style1 {
+			}
+
+			&.style2 {
+				> .content {
+					padding: 4rem 3rem;
+				}
+
+				&.alt {
+					> .content {
+						padding: 4rem 3rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			> .content {
+				padding: 2.5rem 2rem 2.5rem 0;
+				width: 50%;
+			}
+
+			> .image {
+				width: 50%;
+			}
+
+			&.alt {
+				> .content {
+					padding: 2.5rem 0 2.5rem 2rem;
+				}
+			}
+
+			&.style1 {
+			}
+
+			&.style2 {
+				> .content {
+					padding: 2rem;
+				}
+
+				&.alt {
+					> .content {
+						padding: 2rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			@include vendor('flex-direction', 'column-reverse !important');
+			border-top: solid 1px;
+			padding-top: _size(element-margin);
+
+			> .content {
+				padding: 0 !important;
+				width: 100% !important;
+			}
+
+			> .image {
+				width: 100% !important;
+				min-height: 0;
+				height: 15rem;
+				border-radius: _size(border-radius) _size(border-radius) 0 0 !important;
+				margin: 0 0 _size(element-margin) 0;
+
+				img {
+					border-radius: _size(border-radius) _size(border-radius) 0 0 !important;
+				}
+			}
+
+			&:first-child {
+				border-top: 0;
+				padding-top: 0;
+			}
+
+			&.style1 {
+			}
+
+			&.style2 {
+				border-top: 0;
+				padding-top: 0;
+
+				> .content {
+					padding: 2rem !important;
+					margin: 0;
+				}
+
+				> .image {
+					margin-bottom: 0;
+				}
+
+				&.alt {
+					> .content {
+						padding: 2rem !important;
+					}
+				}
+			}
+		}
+	}
+
+	@mixin color-post($p: null) {
+		$highlight: _palette($p, highlight);
+
+ 		.post {
+			> .content {
+				header {
+					.category {
+						color: _palette($highlight, bg);
+					}
+				}
+			}
+
+			&.style2 {
+				background-color: _palette($p, bg);
+			}
+
+			@include breakpoint('<=xsmall') {
+				border-top-color: _palette($p, border);
+			}
+ 		}
+	}
+
+	@include color-post;

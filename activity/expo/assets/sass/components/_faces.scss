@@ -1,0 +1,99 @@
+///
+/// Relativity by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Faces */
+
+	ul.faces {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'center');
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'column');
+			@include vendor('align-items', 'center');
+			padding-left: 0;
+			text-align: center;
+			margin: 0 0 0 (_size(element-margin) * 2);
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+
+			.image {
+				border-radius: 100%;
+				margin: 0 0 (_size(element-margin) * 0.75) 0;
+
+				img {
+					border-radius: 100%;
+					width: 8rem;
+				}
+			}
+
+			h3 {
+				font-size: 0.8rem;
+				margin: 0 0 (_size(element-margin) * 0.125) 0;
+			}
+
+			p {
+				font-size: 0.8rem;
+			}
+		}
+
+		@include breakpoint('<=large') {
+			li {
+				margin: 0 0 0 (_size(element-margin) * 1.5);
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			li {
+				margin: 0 0 0 (_size(element-margin) * 1);
+			}
+		}
+
+		@include breakpoint('<=small') {
+			li {
+				.image {
+					img {
+						width: 6rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			display: block;
+
+			li {
+				margin: 0 0 _size(element-margin) 0;
+
+				.image {
+					img {
+						width: 10rem;
+					}
+				}
+
+				h3 {
+					font-size: 1rem;
+				}
+
+				p {
+					font-size: 1rem;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}

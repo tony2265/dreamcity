@@ -1,0 +1,143 @@
+///
+/// Relativity by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Main */
+
+	#wrapper > .main {
+		@include padding(8rem, 0);
+
+		> header {
+			width: 100%;
+			max-width: 35rem;
+			text-align: center;
+			margin: 0 auto (_size(element-margin) * 1.5) auto;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 6.5rem;
+				height: 0.25rem;
+				margin: 0 0 1.5rem 0;
+				border-radius: _size(border-radius);
+				background-color: _palette(accent1, bg);
+			}
+		}
+
+		> .inner {
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			max-width: 58rem;
+
+			&.narrow {
+				max-width: 48rem;
+			}
+
+			&.style1 {
+			}
+
+			&.style2 {
+				@include padding(5rem, 4rem);
+				background-color: _palette(bg);
+				border-radius: _size(border-radius);
+
+				> .image.main:first-child {
+					position: relative;
+					top: -5rem;
+					left: -4rem;
+					width: calc(100% + 8rem);
+					height: 25rem;
+					margin-bottom: 0;
+					border-radius: _size(border-radius) _size(border-radius) 0 0;
+
+					img {
+						border-radius: _size(border-radius) _size(border-radius) 0 0;
+					}
+				}
+			}
+		}
+
+		&.special {
+			text-align: center;
+		}
+
+		&.accent1 {
+			@include color(accent1);
+		}
+
+		&.accent2 {
+			@include color(accent2);
+		}
+
+		&.alt {
+			background-image: url('../../images/bg.jpg');
+			background-size: cover;
+			background-repeat: repeat;
+			background-attachment: fixed;
+		}
+
+		@include breakpoint('<=large') {
+			@include padding(6rem, 3rem);
+
+			> .inner {
+				&.style2 {
+					> .image.main:first-child {
+						height: 20rem;
+					}
+				}
+			}
+
+			&.alt {
+				background-attachment: scroll;
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			> .inner {
+				&.style2 {
+					@include padding(4rem, 3rem);
+
+					> .image.main:first-child {
+						top: -4rem;
+						left: -3rem;
+						width: calc(100% + 6rem);
+						height: 25rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			@include padding(4rem, 2rem);
+
+			> .inner {
+				&.style2 {
+					@include padding(2.5rem, 2rem);
+
+					> .image.main:first-child {
+						top: -2.5rem;
+						left: -2rem;
+						width: calc(100% + 4rem);
+						height: 18rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			> .inner {
+				&.style2 {
+					> .image.main:first-child {
+						height: 14rem;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xxsmall') {
+			@include padding(3rem, 1rem);
+		}
+	}
