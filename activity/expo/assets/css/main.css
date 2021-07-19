@@ -2238,7 +2238,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #51cbb5;
+			background-color: #26BBC9;
 			color: #ffffff !important;
 		}
 
@@ -3454,7 +3454,7 @@ input, select, textarea {
 				#wrapper > .main.accent1 input[type="button"]:hover,
 				#wrapper > .main.accent1 button:hover,
 				#wrapper > .main.accent1 .button:hover {
-					background-color: #51cbb5;
+					background-color: #26BBC9;
 					color: #ffffff !important;
 				}
 
@@ -3666,7 +3666,7 @@ input, select, textarea {
 				#wrapper > .main.accent2 input[type="button"]:hover,
 				#wrapper > .main.accent2 button:hover,
 				#wrapper > .main.accent2 .button:hover {
-					background-color: #51cbb5;
+					background-color: #26BBC9;
 					color: #ffffff !important;
 				}
 
