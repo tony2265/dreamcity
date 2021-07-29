@@ -157,7 +157,7 @@
                             <span class="icon alt fa-download"></span>
                             <h3>載點</h3>
                             <!-- 載點 -->
-                            <p><a target="_blank" href="https://github.com/tony2265/map/releases/download/ray_MoWu/Alpha2.1.zip" class="button">地圖檔</a></p>
+                            <p><a target="_self" href="https://github.com/tony2265/map/releases/download/ray_MoWu/Alpha2.1.zip" onclick="fire()" class="button">地圖檔</a></p>
 
                         </div>
                     </section>
@@ -172,6 +172,7 @@
                                         <li>MC版本：1.17.1 </li>
                                         <li>地圖版本：Alpha2.1 </li>
                                         <li>最後更新：2021-07-28</li>
+										<li id="show_count">下載次數：</li>
                                     </b>
                                 </ul>
                             </span>
@@ -282,6 +283,30 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script type="module">
+        window.onload = async function () {
+            let totalCount = 0;
+            (await getGitData()).data.forEach(data=>{
+                if(data.tag_name == 'ray_MoWu' ){
+                    data.assets.forEach(assets=>{
+                        totalCount += assets.download_count;
+                    })
+                    console.log(totalCount);
+                }
+            })
+            document.getElementById('show_count').innerText += totalCount;
+        }
+    </script>
+    
+	<script type="module">
+		import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+		window.fire = function() {
+			confetti();
+		}
+
+	</script>
+
 
 	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
 	  new Crate({
@@ -289,6 +314,7 @@
 		channel: '681505539032612974' // #💬綜合討論-general
 	  })
 	</script>
+	
 
 </body>
 
