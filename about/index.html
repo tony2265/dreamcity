@@ -6,15 +6,27 @@
 -->
 <html lang="zh-Hant-TW">
 
- <head>
+<head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KNFPB22');</script>
-    <!-- End Google Tag Manager --> 
-   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KNFPB22');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76542419-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -52,27 +64,37 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '761687431383358');
-    fbq('track', 'PageView');
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '761687431383358');
+        fbq('track', 'PageView');
+
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 </head>
+
 <body class="is-preload">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->    <!-- Header -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
     <header id="header">
         <div class="content">
             <h1><a href="#">關於我們</a></h1>
@@ -102,6 +124,7 @@
         </div>
     </section>
     <!-- Dot -->
+    <!--
     <section id="about" class="wrapper">
         <div class="inner">
             <header class="major">
@@ -139,6 +162,8 @@
             </section>
         </div>
     </section>
+-->
+
 
 
 
@@ -148,6 +173,12 @@
                 <h2>組織架構</h2>
             </header>
             <section>
+                               <div class="box alt">
+                    <div class="row gtr-uniform">
+                        <div class="col-12"><span class="image fit"><img src="images/2021_w.jpg" alt="" /></span></div>
+                    </div>
+                </div>
+
                 <ul>
                     <li>夢想之都工作室以團長為團隊最高領導者與負責人。</li>
                     <li>本團隊設有四部門、兩小組。建築設計、企劃管理、美術宣傳、及技術工程部門與管理小組、顧問小組。</li>
@@ -204,6 +235,13 @@
                             <div class="staff-name"><span>首席－莫嵐</span></div>
                         </div>
                         <div class="staff-card">
+                            <a href="./member#2" style="border-bottom-color:white;">
+                                <div class="staff-photo image" id="image"><img src="images/2.jpg" alt="" border="0"></div>
+                            </a>
+                            <div class="staff-name"><span>首席－米格</span></div>
+                        </div>
+
+                        <div class="staff-card">
                             <a href="./member#6" style="border-bottom-color:white;">
                                 <div class="staff-photo image" id="image"><img src="images/6.jpg" alt="" border="0"></div>
                             </a>
@@ -221,12 +259,12 @@
                             </a>
                             <div class="staff-name"><span>次席－毛毛虎</span></div>
                         </div>
-                    <div class="staff-card">
-                        <a href="./member#21" style="border-bottom-color:white;">
-                            <div class="staff-photo image" id="image"><img src="images/pixel/21.jpg" alt="" border="0"></div>
-                        </a>
-                        <div class="staff-name"><span>次席－R靈</span></div>
-                    </div>
+                        <div class="staff-card">
+                            <a href="./member#21" style="border-bottom-color:white;">
+                                <div class="staff-photo image" id="image"><img src="images/pixel/21.jpg" alt="" border="0"></div>
+                            </a>
+                            <div class="staff-name"><span>次席－R靈</span></div>
+                        </div>
 
                         <div class="staff-card">
                             <a href="./member#24" style="border-bottom-color:white;">
@@ -235,8 +273,8 @@
                             <div class="staff-name"><span>次席－派大星</span></div>
                         </div>
 
-                        
-<!--
+
+                        <!--
                         <div class="staff-card">
                             <a href="./member#25" style="border-bottom-color:white;">
                                 <div class="staff-photo image" id="image"><img src="images/25.jpg" alt="" border="0"></div>
@@ -244,14 +282,8 @@
                             <div class="staff-name"><span>冰樂</span></div>
                         </div>
 -->
-                       
-                       
-                        <div class="staff-card">
-                            <a href="./member#2" style="border-bottom-color:white;">
-                                <div class="staff-photo image" id="image"><img src="images/2.jpg" alt="" border="0"></div>
-                            </a>
-                            <div class="staff-name"><span>顧問－米格</span></div>
-                        </div>
+
+
 
 
                     </div>
@@ -278,6 +310,12 @@
                                 <div class="staff-photo image" id="image"><img src="images/3.jpg" alt="" border="0"></div>
                             </a>
                             <div class="staff-name"><span>草莓龍</span></div>
+                        </div>
+                        <div class="staff-card">
+                            <a href="" style="border-bottom-color:white;">
+                                <div class="staff-photo image" id="image"><img src="images/35.jpg" alt="" border="0"></div>
+                            </a>
+                            <div class="staff-name"><span>邱貓</span></div>
                         </div>
                     </div>
                     <div class="staff-group">
@@ -413,7 +451,7 @@
                         </a>
                         <div class="staff-name"><span>糖渣</span></div>
                     </div>
-                    
+
                     <div class="staff-card">
                         <a href="./member#25" style="border-bottom-color:white;">
                             <div class="staff-photo image" id="image"><img src="images/25.jpg" alt="" border="0"></div>
@@ -434,7 +472,7 @@
                     </div>
                     <div class="staff-card">
                         <a href="./member#34" style="border-bottom-color:white;">
-                            <div class="staff-photo image" id="image"><img src="images/old/boy.webp" alt="" border="0"></div>
+                            <div class="staff-photo image" id="image"><img src="images/34.jpg" alt="" border="0"></div>
                         </a>
                         <div class="staff-name"><span>夜瑀</span></div>
                     </div>
@@ -495,7 +533,7 @@
                         <div class="staff-name"><span>雪色</span></div>
                     </div>
                 </div>
-<!--
+                <!--
                 <div class="staff-group">
                     <div class="group-title">
                         <h4 style="display: inline"><b>實況影音部門</b>｜</h4>
