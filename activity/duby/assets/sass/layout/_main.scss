@@ -1,0 +1,316 @@
+///
+/// Landscape by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Main */
+
+	#main {
+		position: absolute;
+		top: _size(header);
+		left: 0;
+		height: calc(100% - #{_size(header)});
+		width: 100%;
+		overflow: hidden;
+
+		&:after {
+			@include vendor('transition', (
+				'opacity 1.5s ease-in-out',
+				'visibility 1.5s'
+			));
+			@include vendor('pointer-events', 'none');
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: _palette(bg);
+			z-index: 100;
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		.reel {
+			@include vendor('display', 'flex');
+			width: auto;
+			height: 100%;
+		}
+
+		.slide {
+			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
+			-webkit-overflow-scrolling: touch;
+			position: relative;
+			width: 100vw;
+			height: 100%;
+			cursor: default;
+			overflow-x: hidden;
+			overflow-y: auto;
+
+			@include vendor('background-image', 'linear-gradient(to top, #{transparentize(_palette(bg), 0.5)}, #{transparentize(_palette(bg), 0.5)})');
+			background-size: auto;
+			background-position: 0% 0%;
+			background-repeat: repeat;
+			background-attachment: fixed;
+
+			> img {
+				display: none;
+			}
+
+			> .inner {
+				@include vendor('transition', 'opacity 1s ease');
+				@include padding(4em, 4em, ((_size(header) / -2), 0, 0, 0));
+				position: relative;
+				width: 40em;
+				max-width: 100%;
+				max-height: 100%;
+				z-index: 4;
+				opacity: 0;
+
+				> .content {
+					@include vendor('transition-delay', '0s');
+					@include vendor('transition', (
+						'opacity 1s ease',
+						'transform 1s ease'
+					));
+					@include color(invert);
+					@include vendor('transform', 'translateY(1.5em)');
+					padding: 2em 2em;
+					border-radius: _size(border-radius);
+					margin: 0 0 _size(element-margin) 0;
+					opacity: 0;
+
+					> :last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			&.left {
+				@include vendor('justify-content', 'flex-start');
+				text-align: left;
+			}
+
+			&.center {
+				@include vendor('justify-content', 'center');
+				text-align: center;
+			}
+
+			&.right {
+				@include vendor('justify-content', 'flex-end');
+				text-align: right;
+			}
+
+			&.style1 {
+				> .inner {
+					width: 50em;
+				}
+
+			}
+
+			&.style2 {
+			}
+
+			&.with-content {
+				> .inner {
+					> :last-child {
+						margin-bottom: (_size(element-margin) + 4em);
+					}
+				}
+			}
+
+			&.active {
+				> .inner {
+					opacity: 1;
+
+					> .content {
+						@include vendor('transition-delay', '0.75s');
+						@include vendor('transform', 'translateY(0)');
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		nav {
+			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
+			@include vendor('justify-content', 'center');
+			@include vendor('pointer-events', 'none');
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 10000;
+			width: 100%;
+			text-align: center;
+			height: 4em;
+
+			> * {
+				@include vendor('transition', (
+					'opacity #{_duration(transition)} ease',
+					'background-color #{_duration(transition)} ease-in-out'
+				));
+				@include vendor('pointer-events', 'auto');
+				-webkit-tap-highlight-cover: rgba(0,0,0,0);
+				display: block;
+				width: 2.25em;
+				height: 2.25em;
+				border-radius: 100%;
+				border: solid 1px _palette(border);
+				margin: 0 0.4em;
+				cursor: pointer;
+				background-image: url('images/arrow.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 60%;
+
+				&:hover {
+					background-color: _palette(border-bg);
+				}
+
+				&:active {
+					background-color: _palette(border-bg-alt);
+				}
+
+				&.disabled {
+					@include vendor('pointer-events', 'none');
+					opacity: 0.5;
+					cursor: default;
+				}
+			}
+
+			> .next {
+			}
+
+			> .previous {
+				@include vendor('transform', 'scaleX(-1)');
+			}
+		}
+
+		body.is-preload & {
+			&:after {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		body.is-touch & {
+			.slide {
+				background-attachment: scroll;
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			.slide {
+				overflow: hidden;
+
+				> .inner {
+					-webkit-overflow-scrolling: touch;
+					overflow-y: auto;
+					overflow-x: hidden;
+					z-index: 3;
+				}
+
+				&.left {
+					@include vendor('justify-content', 'center');
+					text-align: center;
+				}
+
+				&.center {
+					@include vendor('justify-content', 'center');
+					text-align: center;
+				}
+
+				&.right {
+					@include vendor('justify-content', 'center');
+					text-align: center;
+				}
+
+				&.style1 {
+					> .inner {
+						width: 40em;
+					}
+				}
+
+				&.with-content {
+					> .inner {
+						> :last-child {
+							margin-bottom: _size(element-margin);
+						}
+					}
+				}
+			}
+
+			nav {
+				@include vendor('justify-content', 'space-between');
+				height: 100%;
+
+				> * {
+					width: 3em;
+					height: 3em;
+					margin: 0 1.5em;
+					background-size: 45%;
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			top: 0;
+			height: 100%;
+
+			.slide {
+				background-attachment: scroll;
+
+				> .inner {
+					@include padding(3.5em, 3.5em);
+
+					> .content {
+						padding: 2em 2em;
+					}
+				}
+			}
+
+			nav {
+				@include vendor('justify-content', 'space-between');
+				height: 100%;
+
+				> * {
+					width: 3em;
+					background-size: 70%;
+					margin: 0;
+					border: 0;
+					border-radius: 0;
+					height: 100%;
+
+					&:hover {
+						background-color: transparent;
+					}
+
+					&:active {
+						background-color: transparent;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			.slide {
+				> .inner {
+					@include padding(2.5em, 2.5em);
+
+					> .content {
+						padding: 1.25em 1.25em;
+					}
+				}
+			}
+
+			nav {
+				> * {
+					width: 2.5em;
+				}
+			}
+		}
+	}

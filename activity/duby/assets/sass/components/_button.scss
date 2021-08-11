@@ -1,0 +1,120 @@
+///
+/// Landscape by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', (
+			'background-color #{_duration(transition)} ease-in-out',
+			'color #{_duration(transition)} ease-in-out'
+		));
+		border-radius: _size(border-radius);
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		height: 3.75em;
+		line-height: 3.75em;
+		padding: 0 2.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		background-color: transparent;
+		border: solid 1px !important;
+		color: inherit;
+		font-family: _font(button, family);
+		font-weight: _font(button, weight);
+		letter-spacing: _font(button, letter-spacing);
+		text-transform: uppercase;
+		font-size: 0.8em;
+
+		&.icon {
+			&:before {
+				margin-right: 0.5em;
+			}
+		}
+
+		&.fit {
+			width: 100%;
+		}
+
+		&.small {
+			font-size: 0.6em;
+		}
+
+		&.disabled,
+		&:disabled {
+			opacity: 0.25;
+		}
+
+		&.next {
+			padding-right: 2em;
+
+			&:after {
+				content: '';
+				display: inline-block;
+				background-image: url('images/long-arrow.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 1.5em;
+				height: inherit;
+				line-height: inherit;
+				vertical-align: middle;
+				margin: -0.25em 0 0 0.65em;
+			}
+		}
+	}
+
+	@mixin color-button($p: null) {
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			border: solid 1px _palette($p, border) !important;
+
+			&:hover {
+				background-color: _palette($p, border-bg);
+			}
+
+			&:active {
+				background-color: _palette($p, border-bg-alt);
+			}
+
+			&.icon {
+				&:before {
+					color: _palette($p, fg-light);
+				}
+			}
+
+			&.primary {
+				border-color: transparent;
+				background-color: _palette($p, fg-bold);
+				color: _palette($p, bg) !important;
+
+				&:hover {
+					background-color: lighten(_palette($p, fg-bold), 5);
+				}
+
+				&:active {
+					background-color: darken(_palette($p, fg-bold), 5);
+				}
+
+				&.icon {
+					&:before {
+						color: _palette($p, bg);
+					}
+				}
+			}
+		}
+	}
+
+	@include color-button;

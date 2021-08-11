@@ -1,0 +1,104 @@
+///
+/// Landscape by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Header */
+
+	body {
+		padding-top: _size(header);
+	}
+
+	#header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: _palette(accent, bg);
+		color: _palette(accent, fg-bold);
+		height: _size(header);
+		line-height: _size(header);
+
+		nav {
+			height: inherit;
+			line-height: inherit;
+
+			ul {
+				@include vendor('display', 'flex');
+				@include vendor('align-items', 'center');
+				@include vendor('justify-content', 'center');
+				height: inherit;
+				line-height: inherit;
+				list-style: none;
+				margin: 0;
+				padding: 0 0.35em;
+
+				li {
+					padding: 0;
+					margin: 0 0 0 0.35em;
+					text-align: center;
+
+					a {
+						@include vendor('transition', (
+							'background-color #{_duration(transition)} ease-in-out',
+							'color #{_duration(transition)} ease-in-out'
+						));
+						display: block;
+						border: 0;
+						line-height: 3.5em;
+						height: 3.5em;
+						border-radius: _size(border-radius);
+						padding: 0 2em;
+						font-family: _font(button, family);
+						font-weight: _font(button, weight);
+						text-transform: uppercase;
+						letter-spacing: _font(button, letter-spacing);
+						font-size: 0.7em;
+						outline: 0;
+
+						&:hover {
+							background-color: _palette(accent, border-bg);
+						}
+
+						&:active {
+							background-color: _palette(accent, border-bg-alt);
+						}
+					}
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&.active {
+						a {
+							background-color: _palette(accent, fg-bold);
+							color: _palette(accent, bg);
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			nav {
+				ul {
+					li {
+						width: 100%;
+
+						a {
+							padding: 0 1.5em;
+
+							.extra {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			display: none;
+		}
+	}

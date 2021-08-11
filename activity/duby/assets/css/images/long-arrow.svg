@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128px" height="96px" viewBox="0 0 128 96" zoomAndPan="disable">
+	<style>
+		line {
+			stroke: #ffffff;
+			stroke-width: 4px;
+		}
+	</style>
+	<line x1="0" y1="48" x2="128" y2="48" />
+	<line x1="88" y1="16" x2="128" y2="48" />
+	<line x1="88" y1="80" x2="128" y2="48" />
+</svg>
