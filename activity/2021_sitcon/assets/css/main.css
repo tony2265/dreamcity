@@ -1913,7 +1913,7 @@ input, select, textarea {
 		input[type="button"].large,
 		button.large,
 		.button.large {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			height: 3.2625rem;
 			line-height: 3.2625rem;
 			padding: 0 3.25rem;
