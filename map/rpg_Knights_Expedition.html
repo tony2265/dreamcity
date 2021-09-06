@@ -219,8 +219,8 @@
                             <h3>載點</h3>
                             <!-- 載點 -->
                             <!--                            <p><a target="_blank" href="../map_installer/" class="button">夢都地圖下載器</a></p>-->
-                            <p><a target="_self" href="https://go.dreamcity.studio/Hero_of_Island" onclick="fire()" class="button">地圖檔</a>
-                            <p><a target="_self" href="https://go.dreamcity.studio/Hero_of_Island" onclick="fire()" class="button">材質包</a>
+                            <p><a target="_self" href="https://github.com/tony2265/map/releases/download/rpg_Knights_Expedition/V1.0.zip" onclick="fire()" class="button">地圖檔</a>
+                            <p><a target="_self" href="https://github.com/tony2265/resourcepack/releases/download/rpg_Knights_Expedition/v1.0.0.zip" onclick="fire()" class="button">材質包</a>
                             </p>
 
                         </div>
@@ -505,14 +505,14 @@
         window.onload = async function() {
             let totalCount = 0;
             (await getGitData()).data.forEach(data => {
-                if (data.tag_name == 'rpg_Hero_of_Island') {
+                if (data.tag_name == 'rpg_Knights_Expedition') {
                     data.assets.forEach(assets => {
                         totalCount += assets.download_count;
                     })
                     console.log(totalCount);
                 }
             })
-            document.getElementById('show_count').innerText += totalCount + 7739 + 15819 + 1674;
+            document.getElementById('show_count').innerText += totalCount;
             // Github + Medifire + 大陸 + Github_app
         }
 
