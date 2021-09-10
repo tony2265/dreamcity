@@ -2984,7 +2984,7 @@ ec8d81
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 30%;
+				width: 45%;
 			}
 
 				.spotlights > section > .image img {
@@ -3023,7 +3023,7 @@ ec8d81
 				-ms-align-items: center;
 				align-items: center;
 				padding: 2em 3em 0.1em 3em ;
-				width: 70%;
+				width: 55%;
 			}
 
 				.spotlights > section > .content > .inner {
@@ -3050,11 +3050,11 @@ ec8d81
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .image {
-				width: 40%;
+				width: 45%;
 			}
 
 			.spotlights > section > .content {
-				width: 60%;
+				width: 55%;
 			}
 
 		}
