@@ -1,7 +1,7 @@
 ///
-/// Fractal by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+/// Landscape by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
 ///
 
 /* Table */
@@ -17,8 +17,7 @@
 
 		tbody {
 			tr {
-				border-style: solid;
-				border-width: _size(border-width);
+				border: solid _size(border-width);
 				border-left: 0;
 				border-right: 0;
 			}
@@ -36,13 +35,11 @@
 		}
 
 		thead {
-			border-bottom-style: solid;
-			border-bottom-width: (_size(border-width) * 2);
+			border-bottom: solid (_size(border-width) * 2);
 		}
 
 		tfoot {
-			border-top-style: solid;
-			border-top-width: (_size(border-width) * 2);
+			border-top: solid (_size(border-width) * 2);
 		}
 
 		&.alt {
@@ -51,8 +48,7 @@
 			tbody {
 				tr {
 					td {
-						border-style: solid;
-						border-width: _size(border-width);
+						border: solid _size(border-width);
 						border-left-width: 0;
 						border-top-width: 0;
 
@@ -81,7 +77,6 @@
 
 	@mixin color-table($p: null) {
 		table {
-
 			tbody {
 				tr {
 					border-color: _palette($p, border);
@@ -105,7 +100,6 @@
 			}
 
 			&.alt {
-
 				tbody {
 					tr {
 						td {

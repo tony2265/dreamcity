@@ -3,13 +3,13 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'libs/html-grid';
-@import 'font-awesome.min.css';
+@import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Bitter:400,700|Pacifico');
 
 /*
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Landscape by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
 */
 
 // Breakpoints.
@@ -25,14 +25,12 @@
 
 // Mixins.
 
-	@mixin color($p: null) {
+	@mixin color($p) {
+		@include color-typography($p);
 		@include color-button($p);
 		@include color-form($p);
-		@include color-icon($p);
-		@include color-image($p);
 		@include color-list($p);
 		@include color-table($p);
-		@include color-typography($p);
 	}
 
 // Base.
@@ -43,22 +41,16 @@
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/box';
-	@import 'components/button';
 	@import 'components/form';
 	@import 'components/icon';
 	@import 'components/image';
 	@import 'components/list';
 	@import 'components/actions';
 	@import 'components/icons';
-	@import 'components/section';
-	@import 'components/spotlight';
 	@import 'components/table';
-	@import 'components/wrapper';
+	@import 'components/button';
 
 // Layout.
 
 	@import 'layout/header';
 	@import 'layout/main';
-	@import 'layout/footer';
