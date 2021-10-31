@@ -3609,3 +3609,88 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+
+
+/* Spotlight */
+
+.spotlight {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0 0 2em 0;
+}
+
+.spotlight .image {
+    width: 15%;
+	transform: rotate(45deg);
+	margin: 50px;
+    display: block;
+	overflow: hidden;
+}
+
+.spotlight .image img {
+    display: block;
+/*    border-radius: 100%;*/
+	transform: rotate(-45deg) scale(1.42);
+    width: 100%;
+}
+
+.spotlight .content {
+    width: 70%;
+	margin-left: 10%;
+}
+
+.spotlight .content > :last-child {
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+
+    .spotlight .image {
+        margin: 0 0em 0 0;
+    }
+
+    .spotlight:nth-child(2n) .image {
+        margin: 0 0 0 0em;
+    }
+
+}
+
+@media screen and (max-width: 736px) and (orientation: portrait) {
+
+    .spotlight {
+        -moz-flex-direction: column !important;
+        -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+
+    .spotlight .image {		
+		width: 30%;
+		transform: rotate(45deg);
+		margin: 0 0 20 0px;
+		display: block;
+		overflow: hidden;
+
+    }
+
+    .spotlight .content {
+        width: 100%;
+        text-align: center !important;
+    }
+
+}
+
+.image {
+    box-shadow: 0 0 0 20px #ffffff, 0 0 0 21px #e6e6e6;
+}
+
