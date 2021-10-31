@@ -3691,6 +3691,6 @@ input, select, textarea {
 }
 
 .image {
-    box-shadow: 0 0 0 20px #ffffff, 0 0 0 21px #e6e6e6;
+    box-shadow: 0 0 0 10px #ffffff, 0 0 0 11px #e6e6e6;
 }
 
