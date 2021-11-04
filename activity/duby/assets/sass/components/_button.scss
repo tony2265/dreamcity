@@ -1,7 +1,7 @@
 ///
-/// Landscape by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Button */
@@ -13,108 +13,72 @@
 	.button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', (
-			'background-color #{_duration(transition)} ease-in-out',
-			'color #{_duration(transition)} ease-in-out'
+			'background-color #{_duration(transition)} ease',
+			'box-shadow #{_duration(transition)} ease',
+			'color #{_duration(transition)} ease'
 		));
-		border-radius: _size(border-radius);
+		background-color: transparent;
 		border: 0;
+		box-shadow: inset 0 0 0 1px _palette(border);
+		color: _palette(fg-bold) !important;
 		cursor: pointer;
 		display: inline-block;
-		height: 3.75em;
-		line-height: 3.75em;
+		font-family: _font(family-heading);
+		font-size: 0.6em;
+		font-weight: _font(weight-heading-bold);
+		height: _size(element-height) * 1.75;
+		letter-spacing: _font(kerning-heading);
+		line-height: _size(element-height) * 1.75;
 		padding: 0 2.5em;
 		text-align: center;
 		text-decoration: none;
-		white-space: nowrap;
-		background-color: transparent;
-		border: solid 1px !important;
-		color: inherit;
-		font-family: _font(button, family);
-		font-weight: _font(button, weight);
-		letter-spacing: _font(button, letter-spacing);
 		text-transform: uppercase;
-		font-size: 0.8em;
+		white-space: nowrap;
 
-		&.icon {
-			&:before {
-				margin-right: 0.5em;
+		&:hover {
+			box-shadow: inset 0 0 0 1px _palette(accent);
+			color: _palette(accent) !important;
+
+			&:active {
+				background-color: transparentize(_palette(accent), 0.95);
 			}
+		}
+
+		&:before, &:after {
+			color: _palette(fg-light);
+			position: relative;
+		}
+
+		&:before {
+			left: -1em;
+			padding: 0 0 0 0.75em;
+		}
+
+		&:after {
+			left: 1em;
+			padding: 0 0.75em 0 0;
 		}
 
 		&.fit {
 			width: 100%;
 		}
 
+		&.large {
+			font-size: 0.7em;
+			padding: 0 3em;
+		}
+
 		&.small {
-			font-size: 0.6em;
+			font-size: 0.5em;
 		}
 
 		&.disabled,
 		&:disabled {
-			opacity: 0.25;
-		}
+			@include vendor('pointer-events', 'none');
+			color: _palette(border) !important;
 
-		&.next {
-			padding-right: 2em;
-
-			&:after {
-				content: '';
-				display: inline-block;
-				background-image: url('images/long-arrow.svg');
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-position: center;
-				width: 1.5em;
-				height: inherit;
-				line-height: inherit;
-				vertical-align: middle;
-				margin: -0.25em 0 0 0.65em;
+			&:before {
+				color: _palette(border) !important;
 			}
 		}
 	}
-
-	@mixin color-button($p: null) {
-		input[type="submit"],
-		input[type="reset"],
-		input[type="button"],
-		button,
-		.button {
-			border: solid 1px _palette($p, border) !important;
-
-			&:hover {
-				background-color: _palette($p, border-bg);
-			}
-
-			&:active {
-				background-color: _palette($p, border-bg-alt);
-			}
-
-			&.icon {
-				&:before {
-					color: _palette($p, fg-light);
-				}
-			}
-
-			&.primary {
-				border-color: transparent;
-				background-color: _palette($p, fg-bold);
-				color: _palette($p, bg) !important;
-
-				&:hover {
-					background-color: lighten(_palette($p, fg-bold), 5);
-				}
-
-				&:active {
-					background-color: darken(_palette($p, fg-bold), 5);
-				}
-
-				&.icon {
-					&:before {
-						color: _palette($p, bg);
-					}
-				}
-			}
-		}
-	}
-
-	@include color-button;

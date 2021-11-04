@@ -1,19 +1,17 @@
 ///
-/// Landscape by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Image */
 
 	.image {
-		border-radius: _size(border-radius);
 		border: 0;
 		display: inline-block;
 		position: relative;
 
 		img {
-			border-radius: _size(border-radius);
 			display: block;
 		}
 
@@ -45,6 +43,20 @@
 
 			img {
 				width: 100%;
+			}
+		}
+
+		&.featured {
+			display: block;
+			margin: 0 0 _size(section-spacing) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+
+			@include breakpoint('<=small') {
+				margin: 0 0 _size(section-spacing-small) 0;
 			}
 		}
 
