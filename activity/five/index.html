@@ -196,7 +196,7 @@
             <!-- Get Started -->
             <section id="cta" class="main special">
                 <header class="major">
-                    <h2>地圖下載器</h2>
+                    <h2>地圖下載器 - BETA 測試版</h2>
                     <p><b>「夢想之都地圖下載器」</b>BETA測試版公佈！<br>
                         內含完整地圖簡介、製作人員資訊、版本更新日誌！<br>
                         未來夢都最新地圖，將優先上架於此，歡迎下載使用<br>
@@ -216,7 +216,7 @@
                 </header>
                 <div class="col-6 col-12-medium">
                     <ul class="actions stacked">
-                        <li><a href="https://go.dreamcity.studio/Installer" class="button primary fit"><b></b>下載安裝</a></li>
+                        <li><a href="https://go.dreamcity.studio/Installer" class="button primary fit" onclick="warn()"><b></b>下載安裝</a></li>
                         <!--                        <li><a href="#cta" class="button  fit">緊急維護中</a></li>-->
                     </ul>
                 </div>
@@ -266,6 +266,12 @@
         </footer>
 
     </div>
+    <script>
+    
+        function warn(){
+            alert("此下載器為BETA測試版，未來正式版推出後，將會無法使用。\n 最新消息請關注夢想之都官方 Discord。")
+        }
+    </script>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
