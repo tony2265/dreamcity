@@ -260,9 +260,6 @@
 							<span data-year="17/01" data-info="魏滅蜀之戰"></span>
 						</div>
 						<div class="input">
-							<span data-year="17/05" data-info="科洛維亞"></span>
-						</div>
-						<div class="input">
 							<span data-year="17/07" data-info="密室2"></span>
 						</div>
 						<div class="input">
@@ -292,6 +289,12 @@
 						<div class="input active">
 							<span data-year="21/04" data-info="生存試煉III"></span>
 						</div>
+						<div class="input active">
+							<span data-year="21/09" data-info="騎士征途"></span>
+						</div>
+						<div class="input active">
+							<span data-year="21/10" data-info="魷魚遊戲"></span>
+						</div>
 					</div>
 					<hr>
 					<div class="description-flex-container">
@@ -304,10 +307,6 @@
 							下載次數：<u>27558</u>（2020.09.10）<br>
 							西元263年，三國時代，拯救邁入黃昏的蜀國，再一次地，將那太陽拉上來吧！夢想之都三國歷史系列代表作<br>
 							分類：PvP、PvE <br>
-						</p>
-						<p><a href="survival_Kolovia">科洛維亞</a><br><br>
-							科洛維亞 平靜、祥和的一方樂土。邪惡仍然悄悄的潛入。戰士們保衛這塊大陸的和平吧！<br>
-							分類：生存 <br>
 						</p>
 						<p><a href="puzzle_Rooms">一模一樣的密室2</a><br><br>
 							下載次數：<u>8783</u>（2020.09.10）<br>
@@ -356,6 +355,16 @@
 							距離過去的生存試煉已有六年，此次米格與草莓龍將讓它再次大放異彩<br>
 							分類：生存 <br>
 						</p>
+						<p><a href="rpg_Knights_Expedition">騎士征途</a><br><br>
+							下載次數：<u id="rpg_Knights_Expedition"></u><br>
+							以《凱爾特神話》亞瑟王傳說與圓桌騎士的故事為創作基點，身為圓桌騎士的一員，為了獲得至高無上的榮耀，將踏上尋找聖杯的征途，在交雜奇幻的冒險中逐步成長<br>
+							分類：RPG <br>
+						</p>
+						<p><a href="special_Squid_Game">魷魚遊戲</a><br><br>
+							下載次數：<u id="special_Squid_Game"></u><br>
+							你也能成為數百名玩家的其一，一張名片邀請你來到這個致命的場地之中，在一連串的經典遊戲當中互相與人競爭吧<br>
+							分類：特殊 <br>
+						</p>
 
 					</div>
 				</div>
@@ -402,6 +411,8 @@
 			let wtotalCount = 0;
 			let ctotalCount = 0;
 			let stotalCount = 0;
+			let totalCount_knights = 0;
+			let totalCount_squid = 0;
 			(await getGitData()).data.forEach(data => {
 				if (data.tag_name == 'rpg_Hero_of_Island') {
 					data.assets.forEach(assets => {
@@ -439,13 +450,27 @@
 					})
 					console.log(stotalCount);
 				}
+				if (data.tag_name == 'rpg_Knights_Expedition') {
+					data.assets.forEach(assets => {
+						totalCount_knights += assets.download_count;
+					})
+					console.log(totalCount_knights);
+				}
+				if (data.tag_name == 'special_Squid_Game') {
+					data.assets.forEach(assets => {
+						totalCount_squid += assets.download_count;
+					})
+					console.log(totalCount_squid);
+				}
 
 			})
-			document.getElementById('rpg_Hero_of_Island').innerText += rtotalCount + 7739 + 16082  + 2019;
+			document.getElementById('rpg_Hero_of_Island').innerText += rtotalCount + 7739 + 16487  + 2019;
 			document.getElementById('ctm_woc').innerText += wtotalCount + 22057;
 			document.getElementById('ctm_Mysterious_Territory').innerText += mtotalCount + 5666 + 1088;
 			document.getElementById('puzzle_Bullyhood').innerText += ctotalCount + 28551;
 			document.getElementById('survival_Survival_Trial_III').innerText += stotalCount;
+			document.getElementById('rpg_Knights_Expedition').innerText += totalCount_knights +2295;
+			document.getElementById('special_Squid_Game').innerText += totalCount_squid;
 
 		}
 
