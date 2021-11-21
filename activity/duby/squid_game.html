@@ -125,6 +125,7 @@
 
         <!-- Main -->
         <div id="main">
+            <audio id="music" src="images/final_use.mp3" loop autoplay></audio>
 
             <!-- Post -->
             <article class="post">
@@ -172,6 +173,7 @@
 
                 <ul class="actions" style="align-items: center; display: flex; justify-content: center; ">
                     <li><a href="#rule" class="button large" onclick="rule();">魷魚遊戲活動規則</a></li>
+                    <li><a id="sound" class="button large" onclick="play();">聽聽小女孩的聲音</a></li>
 
                     <li><a href="#1120" class="button large" onclick="Content_20();">11 / 20 參加者名單</a></li>
                     <li><a href="#1127" class="button large" onclick="Content_27();">11 / 27 參加者名單</a></li>
@@ -1341,6 +1343,30 @@
 
     </div>
 
+    
+    
+    <script>
+    
+    window.onload = function(){
+        var audio = document.getElementById('music');
+        audio.pause();
+    }
+    function play(){
+        var audio = document.getElementById('music');
+        if(audio.paused){
+            audio.play();
+            document.getElementById('sound').innerHTML = "停止詠唱";
+        }
+        else{
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('sound').innerHTML = "聽聽小女孩的聲音";
+
+        }
+    }
+    
+    </script>
+    
 
     <script>
         function rule() {
