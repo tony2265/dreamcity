@@ -95,6 +95,7 @@
 </head>
 
 <body onload="randombg()" class="is-preload">
+    <audio id="music" src="images/duby_6.mp3" loop autoplay></audio>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -119,12 +120,8 @@
 
 
 <!--                    <a target="_blank" href="./activity/duby/squid_game" class="button primary" style="!important; text-transform: capitalize;">⭐魷魚遊戲VTuber連動⭐</a>-->
-                    <a target="_blank" href="https://twitter.com/Duby_1125" class="button primary" style="!important; text-transform: capitalize;">大大大優惠🔥是小嘟比呦！</a>
+                    <a id="bt" onclick="play()" href="#" class="button primary" >大大大優惠🔥是小嘟比呦！</a>
                     
-                    <audio controls autoplay="autoplay" loop="loop" hidden>
-                    <source src="images/duby_6.mp3" type="audio/mpeg" />
-                    如果不播放，說明你的瀏覽器不支持！
-                    </audio>
 
                 </div>
             </div>
@@ -301,7 +298,38 @@
     </script>
 -->
 
-   
+    <script>
+        var a=0;
+    
+    window.onload = function(){
+        var audio = document.getElementById('music');
+        audio.pause();
+    }
+    function play(){
+        var audio = document.getElementById('music');
+        if( a==0 && audio.paused){
+            audio.play();
+            document.getElementById('bt').innerHTML = "嘟比安靜!!!";
+            a=a+1;
+        }
+        else if (a==1){
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('bt').innerHTML = "來看大嘟比！";
+            a=a+1;
+
+        }
+        else if (a==2){
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('bt').innerHTML = "大大大優惠🔥是小嘟比呦！";
+            a=0;
+
+        }
+    }
+    
+    </script>
+
    
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
