@@ -48,10 +48,10 @@
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
 
-    <meta name="description" content="夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《騎士征途》正是以此契機，由聖杯尋奇組共同製作的RPG地圖。以《凱爾特神話》亞瑟王傳說與圓桌騎士的故事為創作基點，身為圓桌騎士的一員，為了獲得至高無上的榮耀，將踏上尋找聖杯的征途，在交雜奇幻的冒險中逐步成長。">
+    <meta name="description" content="夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《迷宮之城》正是以此契機，由迷城構築者們共同製作的CTM地圖。以《希臘神話》中，關押兇惡的牛頭人—米諾陶洛斯的巨大迷宮為創作原型，玩家作為一位堅強、果敢的冒險者，將藉由無窮的探索及戰鬥，在未知的疆域上昂首前行。">
     <!-- og -->
     <meta property="og:title" content="CTM | 迷宮之城 - 夢想之都">
-    <meta property="og:description" content="夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《騎士征途》正是以此契機，由聖杯尋奇組共同製作的RPG地圖。以《凱爾特神話》亞瑟王傳說與圓桌騎士的故事為創作基點，身為圓桌騎士的一員，為了獲得至高無上的榮耀，將踏上尋找聖杯的征途，在交雜奇幻的冒險中逐步成長。">
+    <meta property="og:description" content="夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《迷宮之城》正是以此契機，由迷城構築者們共同製作的CTM地圖。以《希臘神話》中，關押兇惡的牛頭人—米諾陶洛斯的巨大迷宮為創作原型，玩家作為一位堅強、果敢的冒險者，將藉由無窮的探索及戰鬥，在未知的疆域上昂首前行。">
     <meta property="og:image" content="https://www.dreamcity.studio/map/images/picture/926_2/2.jpg">
 
 
@@ -521,14 +521,14 @@
         window.onload = async function() {
             let totalCount = 0;
             (await getGitData()).data.forEach(data => {
-                if (data.tag_name == 'rpg_Knights_Expedition') {
+                if (data.tag_name == 'ctm_Labyrinth_Crete') {
                     data.assets.forEach(assets => {
                         totalCount += assets.download_count;
                     })
                     console.log(totalCount);
                 }
             })
-            document.getElementById('show_count').innerText += totalCount +1369;
+            document.getElementById('show_count').innerText += totalCount;
             // Github + Medifire + 大陸 + Github_app
         }
 
