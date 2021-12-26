@@ -366,6 +366,11 @@
 							你也能成為數百名玩家的其一，一張名片邀請你來到這個致命的場地之中，在一連串的經典遊戲當中互相與人競爭吧<br>
 							分類：特殊 <br>
 						</p>
+						<p><a href="ctm_Labyrinth_Crete">迷宮之城</a><br><br>
+							下載次數：<u id="ctm_Labyrinth_Crete"></u><br>
+							以《希臘神話》中，關押兇惡的牛頭人—米諾陶洛斯的巨大迷宮為創作原型，玩家作為一位堅強、果敢的冒險者，將藉由無窮的探索及戰鬥，在未知的疆域上昂首前行。<br>
+							分類：CTM <br>
+						</p>
 
 					</div>
 				</div>
@@ -463,6 +468,12 @@
 					})
 					console.log(totalCount_squid);
 				}
+				if (data.tag_name == 'ctm_Labyrinth_Crete') {
+					data.assets.forEach(assets => {
+						totalCount_Crete += assets.download_count;
+					})
+					console.log(totalCount_Crete);
+				}
 
 			})
 			document.getElementById('rpg_Hero_of_Island').innerText += rtotalCount + 7739 + 16487  + 2019;
@@ -472,6 +483,7 @@
 			document.getElementById('survival_Survival_Trial_III').innerText += stotalCount;
 			document.getElementById('rpg_Knights_Expedition').innerText += totalCount_knights +2295;
 			document.getElementById('special_Squid_Game').innerText += totalCount_squid;
+			document.getElementById('ctm_Labyrinth_Crete').innerText += totalCount_Crete;
 
 		}
 
