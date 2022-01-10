@@ -4,6 +4,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// 下拉文字
+$(function(){
+$(".flip").click(function(){
+      $(this).next(".panel").slideToggle("slow");
+  });});
+
+
+
 (function($) {
 
 	var	$window = $(window),
