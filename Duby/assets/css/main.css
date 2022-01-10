@@ -15,11 +15,13 @@
     cursor:pointer;
     color: #ffffff;
     font-weight: 700;
+    text-align: center;
+/*    border-radius:20px;*/
 }
 .panel{
     margin:0px;
     padding:10px;
-    border:solid 1px #c3c3c3;
+/*    border:solid 1px #c3c3c3;*/
     display:none;
 }
 
