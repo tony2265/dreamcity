@@ -1,0 +1,599 @@
+<!DOCTYPE HTML>
+
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KNFPB22');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76542419-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-76542419-5');
+
+    </script>
+    <title>RPG | 騎士征途</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../images/logo.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <meta name="description" content="夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《騎士征途》正是以此契機，由聖杯尋奇組共同製作的RPG地圖。以《凱爾特神話》亞瑟王傳說與圓桌騎士的故事為創作基點，身為圓桌騎士的一員，為了獲得至高無上的榮耀，將踏上尋找聖杯的征途，在交雜奇幻的冒險中逐步成長。">
+    <!-- og -->
+    <meta property="og:title" content="RPG | 騎士征途 - 夢想之都">
+    <meta property="og:description" content="夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《騎士征途》正是以此契機，由聖杯尋奇組共同製作的RPG地圖。以《凱爾特神話》亞瑟王傳說與圓桌騎士的故事為創作基點，身為圓桌騎士的一員，為了獲得至高無上的榮耀，將踏上尋找聖杯的征途，在交雜奇幻的冒險中逐步成長。">
+    <meta property="og:image" content="https://www.dreamcity.studio/map/rpg/images/picture/926_1/0.jpg">
+
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '761687431383358');
+        fbq('track', 'PageView');
+
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script type="module">
+        import {
+            Octokit
+        } from 'https://cdn.skypack.dev/octokit';
+        try {
+            window.getGitData = async function() {
+                const octokit = new Octokit({
+                    owner: "tony2265",
+                    repo: "map"
+                });
+                return octokit.request("GET /repos/tony2265/map/releases");
+            }
+        } catch (e) {
+            console.error(e);
+        }
+
+    </script>
+</head>
+
+
+<body class="is-preload" ondragstart="return false">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--   <embed src="images/picture/17/home.ogg" autostart=true loop=true>-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0" nonce="2NXjCozk"></script>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="rpg" class="logo"><strong>RPG</strong></a>
+            <nav>
+                <a href="#menu">推薦地圖→</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <h3>類別：RPG</h3>
+                <li><a href="Knights_Expedition">騎士征途</a></li>
+                <li><a href="Hero_of_Island">島國勇者</a></li>
+            </ul>
+            <ul class="actions \..stacked">
+                <li><a href="..\..\" class="button primary fit">首頁</a></li>
+                <li><a href="..\" class="button fit">地圖創作</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="alt">
+
+            <!-- One -->
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <!-- 地圖名稱 -->
+                        <h1>騎士征途</h1>
+                    </header>
+                    <span style="overflow: hidden;max-height:25rem;" class="image main">
+                        <!-- 封面圖 -->
+                        <img style="margin-top: -0px;" src="images/picture/926_1/8.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途開場圓桌" />
+                    </span>
+                    <h2 id="content">前言</h2>
+                    <p>夢想之都工作室以「神話傳說」作為第一屆夏令營的創作核心。《騎士征途》正是以此契機，由聖杯尋奇組共同製作的RPG地圖。<br>以《凱爾特神話》亞瑟王傳說與圓桌騎士的故事為創作基點，身為圓桌騎士的一員，為了獲得至高無上的榮耀，將踏上尋找聖杯的征途，在交雜奇幻的冒險中逐步成長。
+                    </p>
+                    <p>
+                        <!--                    <a target="_parent" href="./rpg_Hero_of_Island_feedback" class="button">玩家回饋頁面</a>-->
+                        <a target="_blank" href="https://forms.gle/DV1bWVu774PpvQAr5" class="button">地圖心得回饋</a>
+                        <a target="_blank" href="https://forms.gle/tzrW1UFan3kWvvRr8" class="button">Bug回報</a>
+                    </p>
+
+
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact -->
+        <section id="contact" style="background-color: #212338;">
+            <div class="inner">
+                <section>
+                    <h2 id="content">地圖預告片</h2>
+                    <p>動畫：夜瑀｜剪輯：葛雷特</p>
+                    <style>
+                        .embed-container {
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                        }
+
+                        .embed-container iframe,
+                        .embed-container object,
+                        .embed-container embed {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                    </style>
+                    <div class='embed-container'><iframe src='https://www.youtube.com/embed/HFp1w6mBH-Q' frameborder='0' allowfullscreen></iframe></div>
+                    <hr>
+                    <h2 id="content">劇情</h2>
+                    <p>在受到上帝眷顧的都城「卡美洛」中，有一位英明的君主：亞瑟王。<br>
+                        他與麾下正直、忠誠的圓桌騎士團共同治理一片廣大的領土。<br>
+                        騎士受到亞瑟王的賞識，從容接下尋找聖杯的神聖使命。<br>
+                        於是，他義無反顧地投入一場未知的冒險。<br>
+                        他將證明自身的高潔與強大。等著他的，究竟是什麼呢？
+                    </p>
+
+                </section>
+
+                <section class="split">
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon alt fa-download"></span>
+                            <h3>載點</h3>
+                            <p>
+                                <a target="_self" href="https://github.com/tony2265/map/releases/download/rpg_Knights_Expedition/V1.7.5_map.zip" onclick="fire()" class="button">地圖檔</a>
+                            <p>
+                                <a target="_self" href="https://github.com/tony2265/resourcepack/releases/download/rpg_Knights_Expedition/v1.2.3.zip" onclick="fire()" class="button">材質包</a>
+                            </p>
+
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon alt fa-info"></span>
+                            <h3>地圖資訊</h3>
+                            <span>
+                                <ul class="alt">
+                                    <b>
+                                        <li>類型：RPG </li>
+                                        <li>MC版本：1.16.5 </li>
+                                        <li>地圖版本：V1.7.5 </li>
+                                        <li>最後更新：2021-10-17</li>
+                                        <li id="show_count">下載次數：</li>
+                                    </b>
+                                </ul>
+                            </span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon alt fa-user"></span>
+                            <h3>製作人員</h3>
+                            <span>
+                                <ul class="alt">
+                                    <b>
+                                        <li>組長／美宣：兔乃 </li>
+                                        <li>建築：小瓜</li>
+                                        <li>技術：海歐</li>
+                                        <li>監製／隨隊：嗡嗡</li>
+                                        <br>
+                                        <li>建築協助：夜緋羽、閃光</li>
+                                        <li>企劃協助：悠梨、ＣＢ</li>
+                                    </b>
+                                </ul>
+                            </span>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <section id="Three" class="wrapper">
+            <div class="inner">
+                <div class="section" id="staff">
+                    <div class="content">
+                        <div class="staff-group">
+                            <div class="group-title">
+                                <h4 style="display: inline"><b>遊戲實況</b>｜</h4>
+                                <h5 style="display: inline">Youtuber</h5>
+                            </div>
+                            <div class="staff-card">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=H1eNRDT1ujw" style="border-bottom-color:white;">
+                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/rohHupdqJxlH_y2MezHzKPHZjhRsP_v_Kw552qDdHnPU-Xr2WfpmKqumdah_bB2im2fsMUzuMg=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
+                                </a>
+                                <div class="staff-name"><span>鬼鬼</span></div>
+                            </div>
+
+                            <div class="staff-card">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=cBY9Vd9RLqY" style="border-bottom-color:white;">
+                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/ytc/AKedOLQ0Ep5CkA40A2asmQVgqVcker4pfc9yMvgVVi-ofA=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
+                                </a>
+                                <div class="staff-name"><span>三尾木木犬</span></div>
+                            </div>
+                            <div class="staff-card">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=8EkCIIkAHuo" style="border-bottom-color:white;">
+                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/ytc/AKedOLR7a5iW9hWICZd0YkCgNs3-nz4XfE4WnmhRDMZumw=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
+                                </a>
+                                <div class="staff-name"><span>熊貓團團</span></div>
+                            </div>
+                            <div class="staff-card">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=3Hl5oOUuvLE" style="border-bottom-color:white;">
+                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/ytc/AKedOLQvPW84OkL-RIq_ba4UEUeLcisW4KvcuXEWiHId=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
+                                </a>
+                                <div class="staff-name"><span>小白</span></div>
+                            </div>
+                            <div class="staff-card">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=bkJ3-j4MM7w" style="border-bottom-color:white;">
+                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/GvQ3fkdh2pEeKQg1gZgOwvrqS4iWARu3gd2j2MuBoxnmdtic90DOPWdCEckCcuE9O1f1jHlO=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
+                                </a>
+                                <div class="staff-name"><span>塔芭絲可</span></div>
+                            </div>
+                            <div class="staff-card">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=sPMyD0WHPDo" style="border-bottom-color:white;">
+                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/PJvyNEmxGBCenPn6G7hg8boc0I5MFNgXU2CKyvSLp6c51AVqZCDLJu0L7XAeQiF4r74jp4uKl4U=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
+                                </a>
+                                <div class="staff-name"><span>牧野白</span></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- One -->
+        <section id="two">
+            <div class="inner">
+                <h2 id="content">遊戲場景</h2>
+                <section id="two" class="spotlights">
+
+                    <section>
+                        <a class="image">
+                            <img src="images/picture/926_1/1.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途遊戲場景城堡" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>都城－卡美洛</h3>
+                                </header>
+                                <p>「國王與騎士的美好之地」<br>
+                                    一座高聳潔白的城堡，被蓊鬱的參天大樹纏繞。<br>
+                                    青色的尖頂在藍天下交相輝映，充滿令人平靜的祥和氣息。
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <section>
+                        <a class="image">
+                            <img src="images/picture/926_1/2.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途遊戲場景圓桌" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>都城－圓桌</h3>
+                                </header>
+                                <p>「不可侵犯的決斷之處」<br>
+                                    在氣勢恢弘的石造廳堂中，落下一道明亮的正義之光。<br>
+                                    國王與騎士總在偌大的圓桌上，共同商討繁重的國事。
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <a class="image">
+
+                            <img src="images/picture/926_1/3.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途遊戲場景漁村" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>主大陸－漁村</h3>
+                                </header>
+                                <p>「自然樸實的居所」<br>
+                                    木造的房舍林立，依傍著一片蔚藍的海洋。<br>
+                                    許多居民深耕於此，但蜿蜒的小徑究竟通往何處？
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <a class="image">
+
+                            <img src="images/picture/926_1/4.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途遊戲場景黑塔" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>黑暗大陸－德魯伊聖所</h3>
+                                </header>
+                                <p>「神祕的未知能量正潛伏於此」<br>
+                                    透出昏黃亮光的黑色高塔正突兀地矗立在遠方。<br>
+                                    蟄伏其中的能量湧動，證明其蘊含了謀略的展望。
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <a class="image">
+
+                            <img src="images/picture/926_1/5.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途遊戲生物森林狼棕熊野豬" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>系統－自定義生物</h3>
+                                </header>
+                                <p>在廣大的領土中，仍有許多謎樣的生物伺機而動。<br>
+                                    或許兇猛，或許殘暴，顯然是一群強勁的生存者。<br>
+                                    即使如此，相信騎士仍能英勇無阻。
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <a class="image">
+
+                            <img src="images/picture/926_1/6.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途料理系統食譜燉湯" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>系統－料理烹飪</h3>
+                                </header>
+                                <p>翻動記載了各式配方的食譜。<br>
+                                    古老的鑄鍋飄出陣陣撲鼻的香氣。<br>
+                                    令人食指大動的美味料理即將誕生。
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <a class="image">
+
+                            <img src="images/picture/926_1/7.jpg" alt="夢想之都工作室minecraft RPG地圖場景騎士征途武器鍛造裝備鍛造" data-position="center center" />
+                        </a>
+                        <div class="content">
+                            <div class="inner">
+                                <header class="major">
+                                    <h3>系統－武器防具</h3>
+                                </header>
+                                <p>騎士的劍是使命的脈動。<br>
+                                    騎士的盾是守護的情操。<br>
+                                    日鍛月煉、歷經征戰，方能締造出真正的實力。
+                                </p>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+                <hr>
+
+                <h2 id="content">版權聲明</h2>
+                <p>
+                    您若使用本地圖製作個人作品或二次創作，則視同您同意本工作室無償使用您的作品，作為行銷目的使用。<br>
+                    此頁面圖片、影片與地圖作品皆為夢想之都工作室所有，若用於個人作品或二次創作。<br>
+                    <b>請標註本網站與地圖製作團隊「夢想之都工作室」。</b>
+                </p>
+
+            </div>
+        </section>
+
+
+
+        <!-- 討論區 -->
+        <section id="contact" style="background-color: #212338;">
+            <div class="inner">
+                <section class="split">
+                    <h2 id="content" style="padding-left: 0px;">玩家留言</h2>
+                    <div style="background-color: white;">
+                        <div class="fb-comments" data-href="https://www.dreamcity.studio/map/rpg_Knights_Expedition" data-width="600" data-numposts="5"></div>
+                    </div>
+                </section>
+
+                <section class="split">
+                    <h2 id="content" style="padding-left: 45px;">Discord討論區</h2>
+                    <iframe src="https://discord.com/widget?id=292656013021282304&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </section>
+            </div>
+        </section>
+
+        <section id="two" style="background-color: #212338;">
+            <div class="inner">
+
+                <section id="contact" style="width: auto">
+                    <h2 id="content">遊戲設定</h2>
+                    <div class="inner" style="margin-top: -90px">
+                        <section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon alt fa-info"></span>
+                                    <h3 id="content">顯示設定</h3>
+                                    <ol>
+                                        <li>請於安裝材質包後，參照淺綠色進行設定。</li>
+                                        <li>畫面大小：自動。</li>
+                                        <li>語言設定：Unicode字型：關閉。</li>
+                                    </ol>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon alt fa-info"></span>
+                                    <h3>音樂和音效</h3>
+                                    <span>
+                                        <p>地圖內的自訂音效與BGM，可透過聲音設定進行調整，請安裝材質包後，參照材質說明。</p>
+                                    </span>
+                                </div>
+                            </section>
+
+
+                        </section>
+
+                        <section class="split">
+
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon alt fa-warning"></span>
+                                    <h3 id="content">注意事項</h3>
+                                    <ol>
+                                        <li>請務必安裝「指定材質包」</li>
+                                        <li>僅支持「官方伺服器」</li>
+                                        <li>支持「1 ~ 4人」遊玩，無法中途加入</li>
+                                        <li>版本限定「1.16.5」</li>
+                                        <li>此頁面圖片、影片皆為夢想之都工作室所有，若需使用請至粉專私訊詢問</li>
+                                    </ol>
+                                </div>
+                            </section>
+
+
+                        </section>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a target="_blank" href="https://www.facebook.com/dreamcity26481414/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/dream_city.1125/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCEdc-bRjpqlpY_NTfy_vR1w" class="icon alt fa-youtube"><span class="label">Youtube</span></a></li>
+                    <li><a target="_blank" href="https://go.dreamcity.studio/dc" class="fab fa-discord alt iicon" ></a></li>
+                    <li><iframe data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v7.0/plugins/page.php?adapt_container_width=true&amp;app_id=260935117284486&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3d2de10dfdf4%26domain%3Dwww.dreamcity.studio%26origin%3Dhttps%253A%252F%252Fwww.dreamcity.studio%252Ff3fc266e3cb3dfc%26relation%3Dparent.parent&amp;container_width=0&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fdreamcity26481414%2F&amp;locale=zh_TW&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=&amp;width=295" style="border: none; visibility: visible; width: 295px; height: 72px;" class=""></iframe></li>
+                </ul>
+				<ul class="copyright">
+					<li>&copy; 2022 夢想之都工作室</li>
+					<li><a target="_blank" href="https://go.dreamcity.studio/donate">小額贊助</a></li>
+					<li><a target="" href="../">地圖作品</a></li>
+					<li><a target="" href="../../about/">關於夢都</a></li>
+				</ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="module">
+        window.onload = async function() {
+            let totalCount = 0;
+            (await getGitData()).data.forEach(data => {
+                if (data.tag_name == 'rpg_Knights_Expedition') {
+                    data.assets.forEach(assets => {
+                        totalCount += assets.download_count;
+                    })
+                    console.log(totalCount);
+                }
+            })
+            document.getElementById('show_count').innerText += totalCount + 2295;
+            // Github + Medifire + 大陸 + Github_app
+        }
+
+    </script>
+    <script type="module">
+        import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+        window.fire = function() {
+            confetti();
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+            server: '292656013021282304', // 夢想之都官方討論區 DreamCity Studio
+            channel: '681505539032612974' // #💬綜合討論-general
+        })
+
+    </script>
+
+</body>
+
+</html>
