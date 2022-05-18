@@ -55,7 +55,22 @@
 	
 		<meta name="keywords" content="minecraft,蜜蜂,元宇宙,BeeWorld,主題樂園" />
 	
-
+		<script type="module">
+			import { Octokit } from 'https://cdn.skypack.dev/octokit';
+			try {
+				window.getGitData =async function () {
+					const octokit = new Octokit({
+						owner: "tony2265",
+						repo: "map"
+					});
+					return octokit.request("GET /repos/tony2265/map/releases");
+				}
+			}
+			catch (e) {
+				console.error(e);
+			}
+		</script>
+	
 	</head>
 	<body class="is-preload">
 
@@ -246,6 +261,10 @@
 											<td style="text-align: left;"><a target="_blank" href="https://resourcepack.net/blockpixel-resource-pack/" class="">BlockPixel</a> / <a target="_blank" href="https://www.curseforge.com/minecraft/customization/complementary-shaders" class="">Complementary Shaders</a></td>
 										</tr>
 										<tr>
+											<td>入園人次</td>
+											<td id="show_count" style="text-align: left;"></td>
+										</tr>
+										<tr>
 											<td>入園門票</td>
 											<td style="text-align: left;">Simply Have Areas Reserved for the Environment<br>（為我們的生態環境保留可呼吸的空間）</td>
 										</tr>
@@ -268,8 +287,8 @@
 
 
 					<ul class="actions special">
-						<li><a href="#" class="button wide primary">地圖載點</a></li>
-						<li><a href="#" class="button wide">材質包載點</a></li>
+						<li><a onclick="showalert()" href="#" class="button wide primary">地圖載點</a></li>
+						<li><a target="_self" onclick="fire()" href="https://github.com/tony2265/resourcepack/releases/download/special_beeworld/beeworld.zip" class="button wide">材質包載點</a></li>
 					</ul>
 				</div>
 			</section>
@@ -302,6 +321,32 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="module">
+				window.onload = async function () {
+					let totalCount = 0;
+					(await getGitData()).data.forEach(data=>{
+						if(data.tag_name == 'special_beeworld' ){
+							data.assets.forEach(assets=>{
+								totalCount += assets.download_count;
+							})
+							console.log(totalCount);
+						}
+					})
+					document.getElementById('show_count').innerText += totalCount;
+				}
+			</script>
+			<script type="module">
+				import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+				window.fire = function() {
+					confetti();
+				}
+		
+			</script>
+		    <script>
+				function showalert() {
+					alert("將於 05/20 (五)更新，敬請期待!");
+				}
+			</script>
 
 	</body>
 </html>
