@@ -483,14 +483,37 @@
 
 	</script>
 
-	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-		new Crate({
-			server: '292656013021282304', // 夢想之都官方討論區 DreamCity Studio
-			channel: '681505539032612974' // #💬綜合討論-general
-		})
 
-	</script>
+<!-- Messenger 洽談外掛程式 Code -->
+<div id="fb-root"></div>
+
+<!-- Your 洽談外掛程式 code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "731386903640536");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v14.0'
+	});
+  };
+
+  (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </body>
-
 </html>
