@@ -83,7 +83,7 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header">
-            <a href="./" class="logo"><strong>地圖創作</strong></a>
+            <a href="../" class="logo"><strong>地圖創作</strong></a>
             <nav>
                 <a href="#menu">Menu</a>
             </nav>
@@ -96,7 +96,7 @@
                 <li><a href="Knights_Expedition">騎士征途</a></li>
                 <li><a href="Hero_of_Island">島國勇者</a></li>
             </ul>
-            <ul class="actions \..stacked">
+            <ul class="actions stacked">
                 <li><a href="..\..\" class="button primary fit">首頁</a></li>
                 <li><a href="..\" class="button fit">地圖創作</a></li>
             </ul>
@@ -201,7 +201,24 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-	  
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v14.0'
+      });
+    };
+  
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
 
 </body>
 
