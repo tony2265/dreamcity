@@ -7,7 +7,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
+.fab{
+	font-family : "Font Awesome 5 Brands";
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -134,7 +136,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #223464;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3184,7 +3186,7 @@ ec8d81
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #6085A6;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3221,7 +3223,7 @@ ec8d81
 				margin-right: 0.325em;
 				padding: 0 0.125em 0 0.375em;
 			}
-
+			banner
 			#header .logo:hover strong {
 				background-color: #9bf1ff;
 			}
@@ -3480,7 +3482,7 @@ ec8d81
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #212338;
+			background-color: #3A5D8C;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3659,7 +3661,7 @@ ec8d81
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		/* background-color: #2a2f4a; won */
 	}
 
 		#main > * {

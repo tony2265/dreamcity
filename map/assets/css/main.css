@@ -3345,7 +3345,8 @@ ec8d81
 			}
 
 			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
+				/* color: #8ea9e8; */
+				color: #3A5D8C;
 			}
 
 			#header.alt.style6 .logo strong {
@@ -3577,7 +3578,8 @@ ec8d81
 		}
 
 		#banner.style5:after {
-			background-color: #8ea9e8;
+			/* background-color: #8ea9e8; */
+			background-color: #3A5D8C;
 		}
 
 		#banner.style6:after {
@@ -4053,7 +4055,7 @@ ec8d81
 .input {
   width: 20px;
   height: 20px;
-  background-color: #6B54AC;
+  background-color: #A9D9D9;
   position: relative;
   border-radius: 50%;
 }
@@ -4067,7 +4069,7 @@ ec8d81
   z-index: -1;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #6B54AC;
+  background-color: #A9D9D9;
   width: 4vw;
   height: 3px;
   max-width: 50px;
@@ -4079,13 +4081,13 @@ ec8d81
   right: calc(-4vw + 12.5px);
 }
 .input.active {
-  background-color: #6B54AC;
+  background-color: #A9D9D9;
 }
 .input.active::before {
-  background-color: #6B54AC;
+  background-color: #A9D9D9;
 }
 .input.active::after {
-  background-color: #AEB6BF;
+  background-color: #BEB6BF;
 }
 .input.active span {
   font-weight: 700;
@@ -4097,7 +4099,7 @@ ec8d81
   font-size: 13px;
 }
 .input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
-  background-color: #AEB6BF;
+  background-color: #BEB6BF;
 }
 .input span {
   width: 1px;
