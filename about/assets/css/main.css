@@ -3,11 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
-/*
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+/* 思源黑體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+/* 楷體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+/* 圓體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/* 仿宋體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/* 明體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 
 html,
 body,
@@ -258,7 +264,12 @@ body,
 input,
 select,
 textarea {
-    font-family: "Microsoft JhengHei";
+    /* font-family: "Microsoft JhengHei"; */
+    font-family: 'Noto Sans TC', sans-serif;
+    /* font-family: 'cwTeXFangSong', serif; */
+    /* font-family: 'cwTeXMing', sans-serif;  */
+    /* font-family: 'cwTeXYen', sans-serif; */
+    /* font-family: 'cwTeXKai', sans-serif; */
     font-weight: normal;
     line-height: 1.5em;
     letter-spacing: -0.015em;
