@@ -1017,7 +1017,7 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		font-weight: 300;
 		height: 2.75rem;
 		letter-spacing: 0.2rem;
@@ -1359,9 +1359,9 @@ input, select, textarea {
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.87rem;
+					/* text-transform: uppercase; */
+					letter-spacing: 0.1rem;
+					/* font-size: 0.9rem; */
 					border-bottom: 0;
                     font-weight:bold;
 				}
@@ -1758,3 +1758,39 @@ input, select, textarea {
   to {opacity: 1}
 }
 
+.menu_list {
+	display: flex;
+}
+
+.menu_list li {
+	position: relative;
+	overflow: hidden;
+}
+.menu_list li p {
+	text-align: center;
+}
+
+.menu_list_tc {
+	transition: 0.25s;
+	position: relative;
+	top: 0;
+	/* font-size: 16px; */
+}
+.menu_list_eng {
+	color: #1e205f;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%);
+	transition: 0.25s;
+	/* font-size: 14px; */
+}
+
+.menu_list li:hover .menu_list_eng {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu_list li:hover .menu_list_tc {
+	top: -40px;
+}
