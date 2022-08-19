@@ -42,6 +42,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	/* cursor:url(../../images/logo.png),default; */
 }
 
 ol, ul {
@@ -1794,3 +1795,9 @@ input, select, textarea {
 .menu_list li:hover .menu_list_tc {
 	top: -40px;
 }
+
+/* #mouse{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+} */
