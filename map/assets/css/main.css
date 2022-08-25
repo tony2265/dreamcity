@@ -1,13 +1,16 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap");
 
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-
+/* 思源黑體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+/* 楷體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+/* 圓體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/* 仿宋體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/* 明體字體 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -26,7 +29,12 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    
+	/* font-family: "Microsoft JhengHei"; */
+	font-family: 'Noto Sans TC', sans-serif;
+	/* font-family: 'cwTeXFangSong', serif; */
+	/* font-family: 'cwTeXMing', sans-serif;  */
+	/* font-family: 'cwTeXYen', sans-serif; */
+
 }
 
 /* Staff */
@@ -152,7 +160,6 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Microsoft JhengHei";
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -288,7 +295,7 @@ input, select, textarea {
 
 	code {
 		background: rgba(212, 212, 255, 0.035);
-		font-family: "Courier New", monospace;
+
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -296,7 +303,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
