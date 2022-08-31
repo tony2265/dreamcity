@@ -1,5 +1,7 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+/* 思源黑體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
 /*
 	Strata by HTML5 UP
@@ -99,7 +101,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #a2a2a2;
-        font-family: "Microsoft JhengHei";
+        /* font-family: "Microsoft JhengHei"; */
+		font-family: 'Noto Sans TC', sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -209,7 +212,7 @@ input, select, textarea {
 		background: #f7f7f7;
 		border-radius: 0.35em;
 		border: solid 2px #efefef;
-		font-family: "Courier New", monospace;
+		/* font-family: "Courier New", monospace; */
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -217,7 +220,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		/* font-family: "Courier New", monospace; */
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
