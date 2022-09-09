@@ -222,6 +222,8 @@
                                         <li>地圖版本：V1.2.10</li>
                                         <li>最後更新：2022-09-09</li>
                                         <li id="show_count">下載次數：</li>
+                                        <!-- <li><span data-clip="svg3Clip" class="count">50</span></li> -->
+
                                     </b>
                                 </ul>
                             </span>
@@ -248,7 +250,7 @@
             </div>
         </section>
 
-        <!-- <section id="Three" class="wrapper">
+        <section id="Three" class="wrapper">
             <div class="inner">
                 <div class="section" id="staff">
                     <div class="content">
@@ -257,50 +259,22 @@
                                 <h4 style="display: inline"><b>遊戲實況</b>｜</h4>
                                 <h5 style="display: inline">Youtuber</h5>
                             </div>
-                            <div class="staff-card">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=H1eNRDT1ujw" style="border-bottom-color:white;">
-                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/rohHupdqJxlH_y2MezHzKPHZjhRsP_v_Kw552qDdHnPU-Xr2WfpmKqumdah_bB2im2fsMUzuMg=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
-                                </a>
-                                <div class="staff-name"><span>鬼鬼</span></div>
-                            </div>
 
+                            
                             <div class="staff-card">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=cBY9Vd9RLqY" style="border-bottom-color:white;">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=Hlvw6FwzfxA" style="border-bottom-color:white;">
                                     <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/ytc/AKedOLQ0Ep5CkA40A2asmQVgqVcker4pfc9yMvgVVi-ofA=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
                                 </a>
                                 <div class="staff-name"><span>三尾木木犬</span></div>
                             </div>
-                            <div class="staff-card">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=8EkCIIkAHuo" style="border-bottom-color:white;">
-                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/ytc/AKedOLR7a5iW9hWICZd0YkCgNs3-nz4XfE4WnmhRDMZumw=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
-                                </a>
-                                <div class="staff-name"><span>熊貓團團</span></div>
-                            </div>
-                            <div class="staff-card">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=3Hl5oOUuvLE" style="border-bottom-color:white;">
-                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/ytc/AKedOLQvPW84OkL-RIq_ba4UEUeLcisW4KvcuXEWiHId=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
-                                </a>
-                                <div class="staff-name"><span>小白</span></div>
-                            </div>
-                            <div class="staff-card">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=bkJ3-j4MM7w" style="border-bottom-color:white;">
-                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/D8ak2VBckfYW8v_701kwKIrcs2nLFzU3SuOcy_qR0OlWe0k1GH-PuQ505wfHbMnS8Nq_tLb5=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
-                                </a>
-                                <div class="staff-name"><span>塔芭絲可</span></div>
-                            </div>
-                            <div class="staff-card">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=sPMyD0WHPDo" style="border-bottom-color:white;">
-                                    <div class="staff-photo image" id="image"><img src="https://yt3.ggpht.com/PJvyNEmxGBCenPn6G7hg8boc0I5MFNgXU2CKyvSLp6c51AVqZCDLJu0L7XAeQiF4r74jp4uKl4U=s88-c-k-c0x00ffffff-no-rj" alt="" border="0"></div>
-                                </a>
-                                <div class="staff-name"><span>牧野白</span></div>
-                            </div>
 
+                            
 
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
         <!-- One -->
@@ -567,8 +541,9 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="module">
+        let totalCount = 0;
         window.onload = async function() {
-            let totalCount = 0;
+            
             (await getGitData()).data.forEach(data => {
                 if (data.tag_name == 'ctm_Lost_in_Space') {
                     data.assets.forEach(assets => {
@@ -578,8 +553,21 @@
                 }
             })
             document.getElementById('show_count').innerText += totalCount;
-            // Github + Medifire + 大陸 + Github_app
+
         }
+
+        // $('.count').each(function () {
+        //     $(this).prop('Counter',0).animate(
+        //     {Counter: totalCount}, 
+        //     {
+        //         duration: 4000,
+        //         easing: 'swing',
+        //         step: function (now) {
+        //             $(this).text(Math.ceil(now));
+        //         }
+        //     }
+        //     );
+        // });
 
     </script>
     <script type="module">
