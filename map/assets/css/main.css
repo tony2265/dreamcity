@@ -3015,17 +3015,18 @@ ec8d81
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-/*			background-color: #2e3450;*/
+
 		}
 
-			.spotlights > section > .image {
-				background-position: center center;
-				background-size: cover;
-				border-radius: 0;
-				display: block;
-				position: relative;
-				width: 45%;
-			}
+		.spotlights > section > .image {
+			background-position: center center;
+			background-size: cover;
+			border-radius: 0;
+			display: block;
+			position: relative;
+			width: 30%;
+		}
+
 
 				.spotlights > section > .image img {
 					border-radius: 0;
@@ -3045,27 +3046,27 @@ ec8d81
 					width: 100%;
 				}
 
-			.spotlights > section > .content {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
-				justify-content: center;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
-				align-items: center;
-				padding: 2em 3em 0.1em 3em ;
-				width: 55%;
-			}
-
+				.spotlights > section > .content {
+					display: -moz-flex;
+					display: -webkit-flex;
+					display: -ms-flex;
+					display: flex;
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					-moz-justify-content: center;
+					-webkit-justify-content: center;
+					-ms-justify-content: center;
+					justify-content: center;
+					-moz-align-items: center;
+					-webkit-align-items: center;
+					-ms-align-items: center;
+					align-items: center;
+					padding: 2em 3em 0.1em 3em ;
+					width: 70%;
+				}
+	
 				.spotlights > section > .content > .inner {
 					margin: 0 auto;
 					max-width: 100%;
@@ -3077,7 +3078,7 @@ ec8d81
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-/*				background-color: #333856;*/
+
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3090,11 +3091,11 @@ ec8d81
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .image {
-				width: 45%;
+				width: 40%;
 			}
 
 			.spotlights > section > .content {
-				width: 55%;
+				width: 60%;
 			}
 
 		}
