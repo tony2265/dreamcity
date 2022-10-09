@@ -4395,7 +4395,7 @@ body.is-preload #header .image img {
 .input {
   width: 25px;
   height: 25px;
-  background-color: #2C3E50;
+  background-color: #fa9f36;
   position: relative;
   border-radius: 50%;
 }
@@ -4409,7 +4409,7 @@ body.is-preload #header .image img {
   z-index: -1;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #2C3E50;
+  background-color: #fa9f36;
   width: 4vw;
   height: 5px;
   max-width: 50px;
@@ -4421,13 +4421,13 @@ body.is-preload #header .image img {
   right: calc(-4vw + 12.5px);
 }
 .input.active {
-  background-color: #2C3E50;
+  background-color: #fa9f36;
 }
 .input.active::before {
-  background-color: #2C3E50;
+  background-color: #fa9f36;
 }
 .input.active::after {
-  background-color: #AEB6BF;
+  background-color: #e2c5a4;
 }
 .input.active span {
   font-weight: 700;
@@ -4439,7 +4439,7 @@ body.is-preload #header .image img {
   font-size: 16px;
 }
 .input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
-  background-color: #AEB6BF;
+  background-color: #e2c5a4;
 }
 .input span {
   width: 1px;
