@@ -53,7 +53,7 @@
 $(function(){
 	var inputs = $('.input');
 	var paras = $('.description-flex-container').find('p');
-	$(inputs).click(function(){
+	$(inputs).hover(function(){
 		var t = $(this),
 				ind = t.index(),
 				matchedPara = $(paras).eq(ind);
@@ -62,3 +62,10 @@ $(function(){
 		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
 	});
 });
+
+var retired_p = document.getElementsByClassName('retired');
+for(let i = 0; i < retired_p.length; i++) {
+	retired_p[i].addEventListener("click", function() {
+	event.preventDefault();
+})
+}
