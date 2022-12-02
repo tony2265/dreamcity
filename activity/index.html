@@ -1,227 +1,117 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
-<head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KNFPB22');
-
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76542419-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-76542419-5');
-
-    </script>
-
-    <title>夢都快訊 | DreamCity</title>
-    <meta name="description" content="夢想之都工作室是致力於Minecraft創作的線上學生社群組織。在創作的過程也藉此磨練技術、培養專長，與團員共同成長。">
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="Shortcut Icon" type="image/x-icon" href="../images/logo.ico" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="https://www.dreamcity.studio/images/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
+    />
+    <title>Vtuber | 夢想之都工作室</title>
+    <meta property="og:title" content="Vtuber | 夢想之都工作室" />
+    <meta itemprop="name" content="Vtuber | 夢想之都工作室" />
+    <meta property="twitter:meta_title" content="Vtuber | 夢想之都工作室" />
+    <meta name="description" content="夢想之都工作室是" />
+    <meta property="og:description" content="夢想之都工作室是" />
+    <meta itemprop="description" content="夢想之都工作室是" />
+    <meta property="twitter:description" content="夢想之都工作室是" />
+    <meta name="image" content="https://www.dreamcity.studio/images/logo.ico" />
+    <meta
+      itemprop="image"
+      content="https://www.dreamcity.studio/images/logo.ico"
+    />
+    <meta
+      property="og:image"
+      content="https://www.dreamcity.studio/images/logo.ico"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.dreamcity.studio/images/logo.ico"
+    />
+    <meta property="og:url" content="https://www.dreamcity.studio/art/" />
+    <meta property="og:type" content="Website" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <style>
+      .slider {
+        width: 100%;
+        max-height: 500px;
+      }
 
-    <!-- og -->
-    <meta property="og:title" content="夢都快訊 - 夢想之都">
-    <meta property="og:description" content="關注這裡，讓你掌握夢想之都工作室的最新活動消息">
-    <!-- og -->
-    <meta property="og:image:width" content="159">
-    <meta property="og:image:height" content="138">
-    <meta property="og:image" content="https://www.dreamcity.studio/images/logo_0218.png">
+      .slick-slide {
+        margin: 0px 20px;
+        max-height: 500px;
+      }
 
+      .slick-slide img {
+        width: 100%;
+        max-height: 500px;
+      }
 
-    <meta name="keywords" content="minecraft 地圖,minecraft地圖,rpg,麥塊地圖,pve,minecraft rpg地圖,minecraft 生存地圖,創世神地圖,島國勇者,minecraft地圖下載,過五關斬六將,minecraft 地圖下載,麥塊 地圖,minecraft大型生存地圖,minecraft 解謎地圖,創世神 地圖,minecraft生存地圖,mc地圖,夢想之都,賣快地圖,minecraft冒險地圖,minecraft ctm,地圖minecraft,minecraft 多人地圖,ctm minecraft,minecraft解謎地圖,地圖 minecraft,minecraft pvp地圖,mc 地圖,解謎地圖,minecraft 地圖推薦,島國,minecraft多人rpg地圖,生存地圖,minecraft map 巴哈,minecraft多人地圖,minecraft多人解謎地圖,minecraft rpg生存地圖,魏滅蜀之戰,科洛維亞大陸ii,minecraft rpg 地圖,minecraft 解謎,麥塊地圖下載,minecraft 雙人地圖,minecraft 冒險地圖,賣快 地圖,minecraft ctm地圖,minecraft雙人解謎地圖,minecraft pve地圖,ctm地圖,我的世界地圖,地圖,minecraft 單人地圖,1.12.2 地圖,絕界行,minecraft rpg map,minecraft解謎地圖多人,minecraft 伺服器,minecraft 推薦地圖,minecraft 1.16.1 地圖,minecraft 1.12.2 地圖,minecraft 生存,麥快地圖,minecraft 大型生存地圖,夢都,1.16.1 地圖,minecraft地圖推薦,minecraft 地圖 下載,科洛維亞,rpg地圖,minecraft雙人地圖,minecraft恐怖解謎地圖,pvp pve,ㄇㄞˉ塊地圖,minecraft 島國勇者,麥塊生存地圖,minecraft rpg冒險地圖,minecraft server權限設定,島國勇者 攻略,當個創世神 地圖,麥塊 地圖下載,minecraft ctm地圖下載,minecraft 解謎地圖 多人,minecraft大型rpg地圖,夢想之都 minecraft,minecraft 地图,pvp地圖,minecraft 多人rpg地圖,詛咒之冬,minecraft ctm map,minecraft 好玩地圖,minecraft 地圖 推薦,我的世界 地圖" />
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
 
-    <!-- Facebook Pixel Code -->
+      .slick-slide {
+        transition: all ease-in-out 0.3s;
+        opacity: 0.2;
+      }
+
+      .slick-active {
+        opacity: 0.5;
+      }
+
+      .slick-current {
+        opacity: 1;
+      }
+    </style>
+    <script defer="defer" src="js/chunk-vendors.4bc10146.js"></script>
+    <script defer="defer" src="js/index.f2fc2f71.js"></script>
+    <link href="css/chunk-vendors.0284663d.css" rel="stylesheet" />
+    <link href="css/index.dfb75f2b.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript
+      ><strong
+        >We're sorry but menu doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app"></div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./slick/slick.js" charset="utf-8"></script>
     <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '761687431383358');
-        fbq('track', 'PageView');
+      $(document).on("ready", function () {
+        $(".vertical-center-4").slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true,
 
+          responsive: [
+            {
+              breakpoint: 960,
+              settings: {
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: false,
+                // variableWidth: true,
+              },
+            },
+          ],
+        });
+      });
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=761687431383358&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
-    <script type="module">
-        import {
-            Octokit
-        } from 'https://cdn.skypack.dev/octokit';
-        try {
-            window.getGitData = async function() {
-                const octokit = new Octokit({
-                    owner: "tony2265",
-                    repo: "map"
-                });
-                return octokit.request("GET /repos/tony2265/map/releases");
-            }
-        } catch (e) {
-            console.error(e);
-        }
-
-    </script>
-
-
-</head>
-
-<body class="is-preload" ondragstart="return false">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNFPB22" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-
-        <!-- Intro -->
-        <div id="intro">
-            <h1>夢都快訊</h1>
-            <p>關注這裡，讓你掌握夢想之都工作室的最新活動消息</p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
-
-        <!-- Header -->
-        <header id="header">
-            <a href="../" class="logo">Dreamcity</a>
-        </header>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="#" class="scrolly">最新活動</a></li>
-                <li class=""><a href="news" class="">新聞報導</a></li>
-                <li class=""><a href="list" class="">活動錦集</a></li>
-                <!--
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
--->
-            </ul>
-            <ul class="icons">
-                <li><a href="https://www.facebook.com/dreamcity26481414/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/dreamcity.stu/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://www.youtube.com/c/DreamCity%E5%A4%A2%E6%83%B3%E4%B9%8B%E9%83%BD%E5%B7%A5%E4%BD%9C%E5%AE%A4/featured" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-                <li><a href="https://discord.gg/VJ2ce5tSUe" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
-                <li><a href="https://twitter.com/DreamCity_Stu" class="icon brands alt fa-twitter"><span class="label">twitter</span></a></li>
-
-            </ul>
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- Featured Post -->
-            <!-- <article class="post featured">
-                <header class="major">
-                    <span class="date">May 20, 2022</span>
-                    <h2><a href="./bee/">Minecraft世界唯一<br />
-                        虛擬蜜蜂主題樂園</a></h2>
-                    <p>嗡嗡嗡～嗡嗡嗡～ 5/20 世界蜜蜂日，邀請你來到虛擬蜜蜂主題樂園<br>讓我們來一趟蜜蜂世界的科普之旅吧！</p>
-                </header>
-                <a href="./bee/" class="image main"><img src="bee/images/m.jpg" alt="" /></a>
-                <ul class="actions special">
-                    <li><a href="./bee/" class="button large">了解更多</a></li>
-                </ul>
-            </article> -->
-            <article class="post featured">
-                <header class="major">
-                    <span class="date">Nov 19, 2022 - Nov 20, 2022</span>
-                    <h2><a href="./2022_ffk/">2022駁二動漫祭<br />
-                        夢都首次參展</a></h2>
-                    <p>
-                        在11月我們迎來了紗紗週年2.0新衣裝、嘟比2022生日派對、夢都7週年團慶<br>
-                        作足了準備要帶給 小灰塵/花椰菜/夢都玩家 最精彩的活動<br>
-                        在開始之前，先說說我們會在哪裡吧！
-                    </p>
-                </header>
-                <!-- <ul class="actions special">
-                    <li><a href="./2022_ffk/" class="button large">了解更多</a></li>
-                </ul> -->
-
-                <a href="./2022_ffk/" class="image main"><img src="2022_ffk/11.jpg" alt="" /></a>
-            </article>
-
-
-            
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section class="split contact">
-                <section>
-                    <h3>社群連結</h3>
-                    <ul class="icons alt">
-                        <li><a href="https://www.facebook.com/dreamcity26481414/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.instagram.com/dreamcity.stu/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="https://www.youtube.com/c/DreamCity%E5%A4%A2%E6%83%B3%E4%B9%8B%E9%83%BD%E5%B7%A5%E4%BD%9C%E5%AE%A4/featured" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-                        <li><a href="https://discord.gg/VJ2ce5tSUe" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
-                        <li><a href="https://twitter.com/DreamCity_Stu" class="icon brands alt fa-twitter"><span class="label">twitter</span></a></li>
-
-                    </ul>
-                </section>
-            </section>
-        </footer>
-
-        <!-- Copyright -->
-        <div id="copyright">
-            <ul>
-                <li>&copy; 2022 夢想之都工作室</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
