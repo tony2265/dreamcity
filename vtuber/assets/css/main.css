@@ -2832,10 +2832,12 @@ input, select, textarea {
 		}
 
 		.main.style2 {
-			background-color: #333;
+			/* background-color: #333; */
+			/* background: linear-gradient(45deg, rgba(186,224,245,1) 28%, rgba(235,162,210,1) 100%); */
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed, fixed;
 			background-image: url("images/overlay2.png"), url("../../images/banner.png");
+			/* background-image: url("images/overlay2.png"); */
 			background-size: auto, cover;
 		}
 
