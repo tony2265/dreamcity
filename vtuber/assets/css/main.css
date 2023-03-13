@@ -3525,3 +3525,44 @@ input, select, textarea {
 			}
 
 	}
+
+
+	/* slider*/
+	
+	   .image-container {
+		display: flex;
+		overflow-x: hidden;
+		width: 100%;
+	  }
+	  
+	  .image-container a {
+		animation: scroll 60s linear infinite;
+		animation-play-state: running;
+		text-decoration: none;
+		border-bottom:none;
+		margin-right: 0px;
+		border:0;
+
+	}
+
+	  .image-container img {
+		flex: 0 0 auto;
+		height: 250px;
+		margin-right: 0px;
+		border:0;
+	  }
+	  
+	  .image-container:hover a {
+		animation-play-state: paused;
+	  }
+	  
+	  
+	  @keyframes scroll {
+		0% {
+		  transform: translateX(0%);
+		}
+		100% {
+		  transform: translateX(-1400%);
+		}
+	  }
+	  
