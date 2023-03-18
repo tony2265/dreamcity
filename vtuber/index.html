@@ -87,11 +87,7 @@
 		/>
 		<meta property="og:type" content="Website" />
 		<meta property="twitter:card" content="summary_large_image" />
-
 		
-
-
-
 		<script type="module">
 			import { Octokit } from 'https://cdn.skypack.dev/octokit';
 			try {
@@ -129,7 +125,6 @@
 					</ul>
 				</div>
 			</section>
-
 
 
 			<section id="about" class="main style1">
@@ -173,13 +168,16 @@
 					</header>
 
 					<div class="row gtr-150">
-						
+				
+
 						<div class="col-6 col-12-medium">
-
-							
-							<span class="image fit"><img src="images/du2-2.png" alt="" /></span>
-
+							<span class="image fit image-t">
+								<img src="images/du2.png" class="a-image" />
+								<img src="images/du1.png" class="b-image" />
+							</span>
 						</div>
+
+
 						<div class="col-6 col-12-medium">
 
 							
@@ -228,11 +226,14 @@
 							<div class='embed-container'><iframe src='https://www.youtube.com/embed/LwleeyQ4a-E' frameborder='0' allowfullscreen></iframe></div>
 
 						</div>
+
 						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/e5ef40337ad4b19b.png" alt="" /></span>
+							<span class="image fit image-t">
+								<img src="images/sa.png" class="a-image" />
+								<img src="images/sa2.png" class="b-image" />
+							</span>
 						</div>
-
-
+				  
 
 					</div>
 				</div>
@@ -434,6 +435,29 @@
 		</script>
 
 	<style>
+
+		.a-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 1;
+			/* transition: opacity 0.3s; */
+		}
+
+		.b-image {
+			opacity: 0;
+			/* transition: opacity 0.3s; */
+		}
+		.image-t:hover .b-image {
+			opacity: 1;
+		}
+
+		.image-t:hover .a-image {
+			opacity: 0;
+		}
+		
+		
 		.embed-container {
 			position: relative;
 			padding-bottom: 56.25%;
