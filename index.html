@@ -194,10 +194,6 @@
                         <p class="menu_list_tc">合作聯繫</p>
                         <p class="menu_list_eng">Contact</p>
                     </a></li>
-                    <!-- <li><a href="#cooperation">
-                        <p class="menu_list_tc">小額贊助</p>
-                        <p class="menu_list_eng">Donate</p>
-                    </a></li> -->
                 </ul>
             </nav>
 
@@ -375,6 +371,29 @@
         function randombg() {
             document.getElementById("bg").style.backgroundImage = bigSize[random];
         }
+
+        //4-1
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu_list');
+
+        // Get all the list items
+        const listItems = menuList.querySelectorAll('li');
+
+        // Convert the list items NodeList to an array
+        const listItemsArray = Array.prototype.slice.call(listItems);
+
+        // Shuffle the array using the Fisher-Yates algorithm
+        for (let i = listItemsArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [listItemsArray[i], listItemsArray[j]] = [listItemsArray[j], listItemsArray[i]];
+        }
+
+        // Append the shuffled list items back to the menu list
+        listItemsArray.forEach(item => {
+        menuList.appendChild(item);
+        });
+
 
     </script>
 </body>
