@@ -377,6 +377,8 @@
         // Get the menu list
         const menuList = document.querySelector('.menu_list');
 
+        // Define a function to shuffle the list items
+        function shuffleListItems() {
         // Get all the list items
         const listItems = menuList.querySelectorAll('li');
 
@@ -385,14 +387,23 @@
 
         // Shuffle the array using the Fisher-Yates algorithm
         for (let i = listItemsArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [listItemsArray[i], listItemsArray[j]] = [listItemsArray[j], listItemsArray[i]];
+            const j = Math.floor(Math.random() * (i + 1));
+            [listItemsArray[i], listItemsArray[j]] = [listItemsArray[j], listItemsArray[i]];
         }
 
         // Append the shuffled list items back to the menu list
         listItemsArray.forEach(item => {
-        menuList.appendChild(item);
+            menuList.appendChild(item);
         });
+        }
+
+        // Shuffle the list items initially
+        shuffleListItems();
+
+        // Set an interval to shuffle the list items every 10 seconds
+        setInterval(() => {
+        shuffleListItems();
+        }, 8000);
 
 
     </script>
