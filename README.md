@@ -13,4 +13,4 @@
 我們相信，夢想之都擁有完整的遊戲設計團隊，與豐富的Minecraft地圖創作經驗，使廣大玩家可以在我們的地圖中，獲得良好的遊戲體驗。
 
 
-更多資訊歡迎至我們的 [Facebook](https://www.facebook.com/dreamcity26481414/) 查閱。
+更多資訊歡迎至我們的 [Facebook](https://www.facebook.com/DreamCity.Stu/) 查閱。
