@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>地圖心得回饋</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="https://www.dreamcity.studio/images/logo.ico" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="is-preload">
+  <!-- Header -->
+  <header id="header">
+    <h1><a href="#intro">DreamCity</a></h1>
+  </header>
+
+  <!-- Intro -->
+  <section id="intro" class="main style1 dark fullscreen">
+    <div class="content">
+      <header>
+        <h2>🍀夢森の快問快答🍀</h2>
+      </header>
+      <!-- <p>
+        <a href="https://www.youtube.com/@YumeMori0118">夢森的YouTube頻道</a>
+        <br>開始填答
+      </p> -->
+      <footer>
+        <a href="#contact" class="button style2 down">More</a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="main style3 secondary">
+    <div class="content">
+      <header>
+        <h2>歡迎來到咩醬的快問快答時間</h2>
+        <p>
+          提出你想問咩醬的任何問題～<br>
+          來訓練我的語速到底有多快！</p>
+      </header>
+      <div class="box">
+        <form id="google-form">
+          <div class="fields">
+            <div class="field">
+              <input type="text" id="txb_name" name="name" placeholder="暱稱（選填）" />
+            </div>
+
+            <div class="field">
+              <textarea id="txb_msg" name="message" placeholder="留言..." rows="4"></textarea>
+            </div>
+          </div>
+          <ul class="actions special">
+            <li><input style="font-weight: bold;" type="submit" value="發送" /></li>
+          </ul>
+        </form>
+        <p id="success-msg" style="color: rgb(20, 82, 8);font-weight: bold;display:none;">已成功發送</p>
+        <p id="empty-msg" style="color: rgb(20, 82, 8);font-weight: bold;display:none;">留言區請勿留白</p>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <!-- Icons -->
+    <ul class="icons">
+      <li><a aria-label="dc_ig" target="_blank" href="https://www.instagram.com/yumemori_vtuber/"
+          class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a aria-label="dc_yt" target="_blank" href="https://www.youtube.com/@YumeMori0118"
+          class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+      <li><a aria-label="dc_tw" target="_blank" href="https://twitter.com/YumeMori_0118"
+          class="icon brands fa-twitter"><span class="label">twitter</span></a></li>
+    </ul>
+
+    <!-- Menu -->
+    <ul class="menu">
+      <li>&copy; 2023 夢想之都工作室</li>
+    </ul>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+
+
+    $('#google-form').submit(function (e) {
+      e.preventDefault();
+      $('#empty-msg').hide(); // 隱藏空白訊息
+      $('#success-msg').hide(); // 隱藏成功訊息
+
+      if ($('#txb_msg').val()) {//必填欄位
+        $.ajax({
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSfRtRqeK-OFj2a84VIeii1nBmbGDPwTnaR8m-BpO0D6iLj-6w/formResponse",
+          crossDomain: true,
+          type: "POST",
+          dataType: "JSONP",
+          data: {
+            "entry.566888476": $('#txb_name').val(),
+            "entry.138358592": $('#txb_msg').val()
+          },
+          complete: function () { //完成後
+            $('#txb_name').val('')
+            $('#txb_msg').val('')
+            $('#success-msg').show(); // 顯示成功訊息
+            setTimeout(function () { // 5秒後隱藏訊息
+              $('#success-msg').hide();
+            }, 5000);
+
+          }
+
+        });
+      } else {
+        $('#empty-msg').show(); // 如果留言為空，則顯示空白訊息
+      }
+
+    });
+  </script>
+
+
+
+</body>
+
+</html>
