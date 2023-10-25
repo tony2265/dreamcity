@@ -122,6 +122,10 @@
         });
       } else {
         $('#empty-msg').show(); // 如果留言為空，則顯示空白訊息
+        setTimeout(function () { // 5秒後隱藏訊息
+          $('#empty-msg').hide();
+        }, 5000);
+
       }
 
     });
