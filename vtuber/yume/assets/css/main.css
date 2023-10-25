@@ -1957,7 +1957,7 @@ input, select, textarea {
 		}
 
 			.main.style1 h2 {
-				font-size: 4.25em;
+				font-size: 4vw;
 				line-height: 1em;
 			}
 
@@ -2117,7 +2117,7 @@ input, select, textarea {
 			}
 
 				.main.style1 h2 {
-					font-size: 3em;
+					font-size: 2em;
 				}
 
 			.main.style2 {
