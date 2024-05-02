@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+
+      var fullPath = window.location.pathname;
+
+
+      var basePaths = {
+        "/activity/": ['2021_graduation', '2023_lantern_festival', 'bee', 'expo', 'taipei101'],
+        "/map/": []
+      };
+
+      var found = false;
+
+      Object.keys(basePaths).forEach(function(basePath) {
+        if (fullPath.startsWith(basePath)) {
+          if (basePaths[basePath].length > 0) {
+            basePaths[basePath].some(function(item) {
+              var regex = new RegExp("^" + basePath + item + "(/|$)");
+              if (regex.test(fullPath)) {
+                found = true;
+                return true;
+              }
+            });
+          }
+
+          if (!found) {
+            window.location.href = basePath;
+          }
+        }
+      });
+
+    });
+  </script>
+</head>
+<body>
+  <p>If you are not redirected, <a href="/">click here to return to the homepage.</a></p>
+</body>
+</html>
