@@ -24,6 +24,13 @@
         } else {
           window.location.href = "/map/";
         }
+      } else if (fullPath.startsWith("/about/")) {
+        var subPath = fullPath.substring("/about/".length);
+        if (subPath) {
+          window.location.href = "/about/";
+        } else {
+          window.location.href = "/about/";
+        }
       } else {
         window.location.href = "/";
       }
