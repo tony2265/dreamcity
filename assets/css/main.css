@@ -1809,5 +1809,6 @@ input, select, textarea {
 	background-position: center;  /* 圖片始終保持在中央 */
 	width: 100%;  /* 寬度隨父容器變化 */
 	height: 130px; /* 高度自動調整 */
+	user-select: none; 
   }
   
