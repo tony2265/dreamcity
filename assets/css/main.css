@@ -157,11 +157,9 @@ input, select, textarea {
 		/* font-family: 'Noto Sans TC', sans-serif; */
     /* font-family: 'cwTeXFangSong', serif; */
     /* font-family: 'cwTeXMing', sans-serif;  */
-    font-family: 'cwTeXYen', sans-serif;
+    font-family: 'cwTeXYen', Lato;
+
     /* font-family: 'cwTeXKai', sans-serif; */
-
-
-		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
 	}
@@ -1772,6 +1770,7 @@ input, select, textarea {
 }
 
 .menu_list_tc {
+	font-weight: 550;
 	transition: 0.25s;
 	position: relative;
 	top: 0;
@@ -1801,3 +1800,14 @@ input, select, textarea {
 	height:300px;
 	border:1px solid black;
 } */
+
+.image-replace {
+	color: transparent;  /* 文字透明，保持可讀性 */
+	background-image: url('https://raw.githubusercontent.com/tony2265/web_image/main/title.png'); /* 設定背景圖片 */
+	background-size: 80%;  /* 圖片尺寸隨容器大小變化，並保持比例 */
+	background-repeat: no-repeat;
+	background-position: center;  /* 圖片始終保持在中央 */
+	width: 100%;  /* 寬度隨父容器變化 */
+	height: 130px; /* 高度自動調整 */
+  }
+  
