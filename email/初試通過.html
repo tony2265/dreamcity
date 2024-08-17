@@ -5,84 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @font-face {
+            font-family: 'GenSekiGothic2TW-H';
+            src: url('https://raw.githubusercontent.com/tony2265/web_image/main/email/GenSekiGothic2TW-H.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'GenSekiGothic2TW-B';
+            src: url('https://raw.githubusercontent.com/tony2265/web_image/main/email/GenSekiGothic2TW-B.otf') format('opentype');
+        }
+
+        strong {
+            font-family: 'GenSekiGothic2TW-H', sans-serif;
+        }
+
         body {
+            font-family: 'GenSekiGothic2TW-B', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f1f4f8;
-            font-family: Microsoft JhengHei, sans-serif;
+            background-color: #ffffff;
         }
 
         .container {
-            background-color: #ffffff;
-            max-width: 640px;
+            position: relative;
+
+            background-color: #FCF8F1;
+            background-image: url('https://raw.githubusercontent.com/tony2265/web_image/main/email/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            width: 640px;
             margin: 0 auto;
-            padding: 0 20px;
-            border-bottom: 1px solid #F3F2F3;
+            border: 8px solid #1D4276;
+            overflow: hidden; 
+        }
+        .corner-dot-wrapper {
+            position: absolute;
+            width: 50px; 
+            height: 50px;
+            border: 2px solid #1D4276;
+            border-radius: 50%;
         }
 
-        .header img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
+        .corner-dot {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #1D4276;
+            border-radius: 50%;
+            top: 5px;
+            left: 5px;
+        }
+        .top-left {
+            top: -25px;
+            left: -25px;
+        }
+
+        .top-right {
+            top: -25px;
+            right: -25px;
+        }
+
+        .bottom-left {
+            bottom: -25px;
+            left: -25px;
+        }
+
+        .bottom-right {
+            bottom: -25px;
+            right: -25px;
         }
 
         .content {
             text-align: center;
-            color: #555555;
+            color: #303030;
         }
 
         .content p {
             margin: 0 0 15px;
-            font-size: 16px;
-            line-height: 1.5;
+            font-size: 15px;
+            line-height: 2;
+            letter-spacing: 0.8px;
+            
         }
 
         .content strong {
-            font-size: 38px;
-            color: #004680;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .footer img {
-            width: 32px;
-            height: 32px;
-            margin: 0 4px;
+            font-size: 24px;
+            color: #303030;
+            letter-spacing: 3px;
         }
 
         .divider {
-            border-top: 5px solid #004680;
+            border-top: 4px solid #004680;
             margin: 10px 0;
         }
+        img {
+            -webkit-user-drag: none; /* 禁止在WebKit瀏覽器中拖動圖片 */
+            user-drag: none; /* 標準屬性 */
+            -moz-user-select: none; /* 禁止在Firefox中拖動圖片 */
+            -ms-user-select: none; /* 禁止在Internet Explorer中拖動圖片 */
+            user-select: none; /* 禁止在標準瀏覽器中拖動圖片 */
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="https://www.dreamcity.studio/email/images/2.png" alt="Image">
+    <div class="container" style="margin: 20px; padding: 10px;  text-align: center;">
+        <div class="corner-dot-wrapper top-left">
+            <div class="corner-dot"></div>
         </div>
+        <div class="corner-dot-wrapper top-right">
+            <div class="corner-dot"></div>
+        </div>
+        <div class="corner-dot-wrapper bottom-left">
+            <div class="corner-dot"></div>
+        </div>
+        <div class="corner-dot-wrapper bottom-right">
+            <div class="corner-dot"></div>
+        </div>
+    
+        <img style="width: 250px; padding: 30px;" src="https://raw.githubusercontent.com/tony2265/web_image/main/email/top.png" alt="Image">
+
         <div class="content">
-            <p><strong>成員招募審核結果</strong></p>
-            <p>XX，您好：<br><br>
+
+            <p><strong>｛ 成員招募審核通知 ｝</strong></p>
+            <div style="text-align: left; padding: 30px; margin: 0px 50px 10px 50px;">
+            <p>XX，您好：<br></p>
+                <p>
                 感謝您申請加入夢想之都工作室，您的申請已由部門首席審閱完畢。<br>
                 在此恭喜您通過初試。<br>
-                請點擊下方連結，填寫複試表單，以利下一階段審核進行。<br>
-                複試表單網址：<a href="https://go.dreamcity.studio/retest" target="_blank">https://go.dreamcity.studio/retest</a>
+                請點擊下方連結，填寫複試表單，以利下一階段審核進行。<br><br>
+                複試表單網址：<a href="https://go.dreamcity.studio/retest" target="_blank">go.dreamcity.studio/retest</a>
             </p>
-            <p style="text-align: right;">夢想之都工作室管理小組　敬上</p>
+            </div>
+            <img style="width: 120px; text-align: center;" src="https://raw.githubusercontent.com/tony2265/web_image/main/email/logo.png" alt="Image">
+            <p style="font-size: 12px; padding:15px;">夢想之都工作室管理小組　敬上</p>
         </div>
-        <div class="footer">
-            <a href="https://go.dreamcity.studio/fb" target="_blank"><img src="https://www.dreamcity.studio/email/images/facebook2x.png" alt="Facebook"></a>
-            <a href="https://go.dreamcity.studio/ig" target="_blank"><img src="https://www.dreamcity.studio/email/images/instagram2x.png" alt="Instagram"></a>
-            <a href="https://go.dreamcity.studio/yt" target="_blank"><img src="https://www.dreamcity.studio/email/images/youtube2x.png" alt="YouTube"></a>
-            <a href="https://www.dreamcity.studio/" target="_blank"><img src="https://www.dreamcity.studio/email/images/website2x.png" alt="Web Site"></a>
-        </div>
-        <div class="divider"></div>
+
+        <img style="width: 250px; padding: 30px;" src="https://raw.githubusercontent.com/tony2265/web_image/main/email/bottom.png" alt="Image">
+
     </div>
 </body>
 
