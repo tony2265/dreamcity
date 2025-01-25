@@ -1803,8 +1803,8 @@ input, select, textarea {
 
 .image-replace {
 	color: transparent;  /* 文字透明，保持可讀性 */
-	background-image: url('https://raw.githubusercontent.com/tony2265/web_image/main/title.png'); /* 設定背景圖片 */
-	background-size: 80%;  /* 圖片尺寸隨容器大小變化，並保持比例 */
+	background-image: url('https://raw.githubusercontent.com/tony2265/web_image/main/title+en.png'); /* 設定背景圖片 */
+	background-size: 90%;  /* 圖片尺寸隨容器大小變化，並保持比例 */
 	background-repeat: no-repeat;
 	background-position: center;  /* 圖片始終保持在中央 */
 	width: 100%;  /* 寬度隨父容器變化 */
