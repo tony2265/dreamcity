@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600&display=swap");
 
 /* 思源黑體 */
-/* @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 /* 楷體字體 */
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css?display=swap);
 /* 圓體字體 */
@@ -154,10 +154,10 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #ffffff;
 		/* font-family: "Microsoft JhengHei"; */
-		/* font-family: 'Noto Sans TC', sans-serif; */
+		font-family: 'Noto Sans TC', sans-serif;
     /* font-family: 'cwTeXFangSong', serif; */
     /* font-family: 'cwTeXMing', sans-serif;  */
-    font-family: 'cwTeXYen', Lato;
+    /* font-family: 'cwTeXYen', Lato; */
 
     /* font-family: 'cwTeXKai', sans-serif; */
 		font-size: 1rem;
@@ -1770,7 +1770,8 @@ input, select, textarea {
 }
 
 .menu_list_tc {
-	font-weight: 550;
+	font-weight: 300;
+	letter-spacing: 3px;
 	transition: 0.25s;
 	position: relative;
 	top: 0;
