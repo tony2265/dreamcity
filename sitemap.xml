@@ -9,119 +9,192 @@
 
 <url>
   <loc>https://www.dreamcity.studio/</loc>
-  <lastmod>2024-06-28T15:09:32+00:00</lastmod>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/news/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/about/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.studio/map/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/about/</loc>
-  <lastmod>2024-06-28T15:09:32+00:00</lastmod>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.studio/vtuber/</loc>
-  <lastmod>2024-06-28T15:09:32+00:00</lastmod>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.studio/join/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/vtuber/duby/</loc>
-  <lastmod>2025-05-05T05:57:27+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/map/christmas_eve_cookie_express</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/vtuber/akari/</loc>
-  <lastmod>2025-05-05T05:57:28+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/map/bullyhood_remake</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/vtuber/chenhsuyuan/</loc>
-  <lastmod>2025-05-05T05:57:28+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/map/lantern_festival</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/vtuber/niku/</loc>
-  <lastmod>2025-05-05T05:57:28+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/map/vampirewar_iii</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/vtuber/cb/</loc>
-  <lastmod>2025-05-05T05:57:28+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/map/knights_expedition</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/vtuber/teru/</loc>
-  <lastmod>2025-05-05T05:57:27+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/map/hero_of_island</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/map/beeworld</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/map/labyrinth_crete</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/map/squid_game</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/map/winter_of_curse</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/vtuber/guidelines</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/vtuber/duby</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/vtuber/akari</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/vtuber/cb</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/vtuber/chenhsuyuan</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/vtuber/teru</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.dreamcity.studio/vtuber/karin/</loc>
-  <lastmod>2025-05-05T05:57:28+00:00</lastmod>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/christmas_eve_cookie_express/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/vtuber/niku</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/bullyhood_remake/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/2023_lantern_festival/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/lantern_festival/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/2021_graduation/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/vampirewar_iii/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/bee/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/knights_expedition/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/expo/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/hero_of_island/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/expo/photo/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/beeworld/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/expo/1_1</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/labyrinth_crete/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/expo/2_1</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/squid_game/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/expo/2_2</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.dreamcity.studio/map/winter_of_curse/</loc>
-  <lastmod>2024-06-28T15:09:31+00:00</lastmod>
+  <loc>https://www.dreamcity.studio/news/expo/2_3</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
-
+<url>
+  <loc>https://www.dreamcity.studio/news/expo/3_1</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/news/expo/3_2</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/news/expo/3_3</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/contact</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.dreamcity.studio/dreamcup/</loc>
+  <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>
