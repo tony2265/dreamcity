@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
+  <meta charset="utf-8" />
   <title>Redirecting...</title>
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-      var fullPath = window.location.pathname;
+    document.addEventListener('DOMContentLoaded', function () {
+      const path = window.location.pathname;
 
-      if (fullPath.startsWith("/activity/")) {
-        var subPath = fullPath.substring("/activity/".length);
-        if (subPath) {
-          window.location.href = "/news/" + subPath;
-        } else {
-          window.location.href = "/news/";
-        }
-      } else if (fullPath.startsWith("/activity")) {
-        window.location.href = "/news/";
-      } else if (fullPath.startsWith("/news/")) {
-        window.location.href = "/news/";
-      } else if (fullPath.startsWith("/map/")) {
-        var subPath = fullPath.substring("/map/".length);
-        if (subPath) {
-          window.location.href = "/map/";
-        } else {
-          window.location.href = "/map/";
-        }
-      } else if (fullPath.startsWith("/about/")) {
-        var subPath = fullPath.substring("/about/".length);
-        if (subPath) {
-          window.location.href = "/about/";
-        } else {
-          window.location.href = "/about/";
-        }
-      } else {
-        window.location.href = "/";
+      // === 1️⃣ 精準轉址（單一路徑） ===
+      if (path === "/join" || path === "/join/") {
+        window.location.replace("/studio/join");
+        return;
       }
+
+      // === 2️⃣ about 全部導向 studio ===
+      if (path === "/about" || path === "/about/" || path.startsWith("/about/")) {
+        window.location.replace("/studio");
+        return;
+      }
+
+      // === 3️⃣ 舊 news 全部移除 → 回首頁 ===
+      if (path === "/news" || path === "/news/" || path.startsWith("/news/")) {
+        window.location.replace("/");
+        return;
+      }
+
+      // === 4️⃣ 舊 activity 分類（原本導 news） → 回首頁 ===
+      if (path === "/activity" || path === "/activity/" || path.startsWith("/activity/")) {
+        window.location.replace("/");
+        return;
+      }
+
+      // === 5️⃣ map 舊行為保留 ===
+      if (path === "/map" || path === "/map/" || path.startsWith("/map/")) {
+        window.location.replace("/map/");
+        return;
+      }
+
+      // === 6️⃣ 其他未知路徑 → 首頁 ===
+      window.location.replace("/");
     });
   </script>
 </head>
 <body>
-  <p>If you are not redirected, <a href="/">click here to return to the homepage</a>.</p>
+  <p>
+    若未自動跳轉，
+    <a href="/">請點此回到首頁</a>
+  </p>
 </body>
 </html>
