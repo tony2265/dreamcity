@@ -1,187 +1,165 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.dreamcity.studio/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/duby/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/cb/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/teru/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/karin/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/akari/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/niku/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/chenhsuyuan/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/studio/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/contact/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/dreamcup-2025/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/shimen-reservoir/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/expo-2021/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/studio/join/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/lantern-festival-2023/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/bee-park/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/graduation-2021/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/works/case/taipei101/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/vtuber/guidelines/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/christmas_eve_cookie_express/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/bullyhood_remake/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/lantern_festival/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/vampirewar_iii/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/knights_expedition/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/hero_of_island/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/beeworld/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/labyrinth_crete/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/squid_game/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/winter_of_curse/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/map/guide/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/studio/team/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dreamcity.studio/studio/rules/</loc>
-  <lastmod>2026-01-28T11:42:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.dreamcity.studio/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/contact</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/studio</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber</loc>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/sm/main.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/top.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/beeworld</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/bullyhood_remake</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/christmas_eve_cookie_express</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/guide</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/hero_of_island</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/knights_expedition</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/labyrinth_crete</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/lantern_festival</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/squid_game</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/vampirewar_iii</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/map/winter_of_curse</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/studio/join</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/studio/rules</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/studio/team</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/akari</loc>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/akari/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/cb</loc>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/cb/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/chenhsuyuan</loc>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/chen/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/duby</loc>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/duby/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/guidelines</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/karin</loc>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/karin/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/niku</loc>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/niku/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/vtuber/teru</loc>
+        <image:image>
+            <image:loc>https://img.dreamcity.studio/vtuber/teru/2-1.png</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/bee-park</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/dreamcup-2025</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/expo-2021</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/graduation-2021</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/lantern-festival-2023</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/shimen-reservoir</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.dreamcity.studio/works/case/taipei101</loc>
+        <priority>0.6</priority>
+    </url>
 </urlset>
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.6.0 at 2026-01-28T13:18:14.921Z -->
